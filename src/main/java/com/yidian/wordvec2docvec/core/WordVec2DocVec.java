@@ -183,7 +183,7 @@ public class WordVec2DocVec {
             }
         }
 
-        for()
+//        for()
         for (String doc : pool.getDocVecsDocids()) {
             if (!doc.equals(docid)) {
                 String[] tempDocVec = pool.getDocVecByDocid(doc);

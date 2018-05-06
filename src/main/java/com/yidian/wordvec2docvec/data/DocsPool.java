@@ -95,12 +95,17 @@ public class DocsPool {
             InputStreamReader isr = new InputStreamReader(fis);
             BufferedReader br = new BufferedReader(isr);
             String data;
+            int i=0;
             while ((data = br.readLine()) != null) {
                 if (data.split("\t").length == 2) {
                     String docid = data.split("\t")[0];
                     String docVec = data.split("\t")[1];
                     String[] docVecList = docVec.split("\\s+");
                     docVecInfoMap.put(docid, docVecList);
+                    i++;
+                    if (i % 100000 == 0) {
+                        log.info("load doc vec data : line " + i + ":" + docid);
+                    }
                 }
             }
             br.close();

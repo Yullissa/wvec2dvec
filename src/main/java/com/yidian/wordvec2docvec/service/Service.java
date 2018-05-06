@@ -17,6 +17,7 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.util.resource.JarResource;
 import org.eclipse.jetty.util.thread.QueuedThreadPool;
+import java.io.FileWriter;
 
 import java.io.File;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
@@ -115,7 +116,15 @@ public class Service implements Runnable {
         if (task.equals("trainDocVecs")) {
             log.info("docVecsFile");
             File decvec = new File(docVecsFile);
-            if (!decvec.exists()) {
+            if (decvec.exists()) {
+                try{
+                    FileWriter fileWriter =new FileWriter(decvec);
+                    fileWriter.write("");
+                    fileWriter.flush();
+                    fileWriter.close();
+                }catch (Exception e){
+                    log.error(e);
+                }
                 DocsVecCal.defaultInstance(task,priDocFile, docVecsFile, docNum, avgle);
             }
         } else {
