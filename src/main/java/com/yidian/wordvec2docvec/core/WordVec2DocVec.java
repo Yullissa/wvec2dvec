@@ -5,12 +5,13 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.yidian.wordvec2docvec.data.DocsVecCal;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.commons.lang.StringUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.json.JSONObject;
-import org.apache.commons.lang.StringUtils;
-import org.jsoup.nodes.Document;
-import org.apache.log4j.PropertyConfigurator;
-import org.jsoup.Jsoup;
 import lombok.Data;
 import lombok.extern.log4j.Log4j;
 import com.google.common.collect.Lists;
@@ -18,8 +19,7 @@ import com.yidian.wordvec2docvec.data.DocsPool;
 import com.yidian.wordvec2docvec.utils.DocEmbedding;
 import com.yidian.wordvec2docvec.utils.HttpUtils;
 import com.yidian.wordvec2docvec.utils.StringTools;
-
-import javax.print.Doc;
+import com.yidian.wordvec2docvec.utils.BM25;
 
 
 /**
@@ -29,7 +29,9 @@ import javax.print.Doc;
 @Data
 public class WordVec2DocVec {
     private static volatile WordVec2DocVec instance = null;
-    private static volatile DocsPool pool = DocsPool.defaultInstance();
+    //TODO
+//    private static volatile DocsVecCal dovc = DocsVecCal.defaultInstance(14858382, 302.3f);
+    private static volatile DocsPool pool = DocsPool.defaultInstance("getRecommend");
     private static volatile DocEmbedding docEmb = DocEmbedding.defaultInstance();
     private static ObjectMapper mapper = new ObjectMapper();
     private Pattern patIneerPun = Pattern.compile("[`~!@#$^&*()=|{}':;',\\\\[\\\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]");
@@ -37,8 +39,7 @@ public class WordVec2DocVec {
     private String posString = "DEC DEV AD DEG DT PU P LC DER VC ETC AS SP IJ MSP CC BA LB UH";
     private String[] myArray = posString.split(" ");
     private HashSet posSet = new HashSet();
-    private float k = 2.0f;
-    private float b = 0.75f;
+
 
     public static WordVec2DocVec getInstance() {
         if (instance == null) {
@@ -55,28 +56,8 @@ public class WordVec2DocVec {
         for (String pos : myArray) {
             posSet.add(pos);
         }
-        //Todo
-//        DocsPool.defaultInstance();
-//        DocEmbedding.defaultInstance();
     }
 
-
-    /*
-     N total number of documents
-     nqi  number of documents containing qi
-     dqi number of qi in document D
-     D length of the document D in words
-     avgdl the average document length
-     IDF = log (N-nqi+0.5)/(nqi+0.5)
-     f(qi,D) dqi/D
-     f*(k+1)/(f+k(1-b+b*|D|/avgdl))
-      */
-    public float getBM25(float N, float nqi, float dqi, float D, float avgdl) {
-        float f = dqi / D;
-        float IDF = (float) Math.log((N - nqi + 0.5f) / (nqi + 0.5f));
-        float tftd = f * (k + 1) / (f + k * (1 - b + b * D / avgdl));
-        return IDF * tftd;
-    }
 
     private static Map<String, Float> sortByValue(Map<String, Float> unsortMap) {
         List<Map.Entry<String, Float>> list =
@@ -158,140 +139,112 @@ public class WordVec2DocVec {
         return ngramList;
     }
 
-    public List<Map<String, String>> recommend(String doc, int DocNum, float avgle) {
+    public List<Map<String, String>> recommend(String docid, int DocNum, float avgle) {
         log.warn("Use DocNum = " + DocNum);
         log.warn("Use avgle = " + avgle);
-        for (String docid : pool.getPoolAllDocids()) {
-            List<String> wordsList = getWordsByDocid(docid);
-            HashMap<String, float[]> docWordVecMap = new HashMap();
-            HashMap<String, Integer> docWordCountMap = new HashMap();
-            HashMap<String, Float> docWordWeiMap = new HashMap();
-            List<Map<String, String>> recommendForDocid = Lists.newArrayList();
-            HashMap<String, Float> recommendSim = new HashMap<>();
-            for (String word : wordsList) {
-                float[] vec = docEmb.getContextVec(word);
-                if (vec == null) {
-                    continue;
-                }
-                if (!docWordVecMap.containsKey(word)) {
-                    docWordVecMap.put(word, vec);
-                    docWordCountMap.put(word, 1);
-                } else {
-                    docWordCountMap.put(word, docWordCountMap.get(word) + 1);
-                }
-            }
+        BM25 bm = new BM25();
+        List<Map<String, String>> recommendForDocid = Lists.newArrayList();
+        HashMap<String, Float> recommendSim = new HashMap<>();
+        HashMap<String, float[]> docWordVecMap = new HashMap();
+        HashMap<String, Integer> docWordCountMap = new HashMap();
+        HashMap<String, Float> docWordWeiMap = new HashMap();
 
-            Iterator iter = docWordVecMap.entrySet().iterator();
-            while (iter.hasNext()) {
-                Map.Entry entry = (Map.Entry) iter.next();
-                // 获取key
-                String word = (String) entry.getKey();
-                int scale = 14858382 / DocNum;
-                float wordFreq = pool.getWordFreq(word) / scale;
-                float wordWei = (float) getBM25((float) DocNum, wordFreq, (float) docWordCountMap.get(word), wordsList.size(), avgle);
-                docWordWeiMap.put((String) entry.getKey(), wordWei);
+        List<String> wordsList = getWordsByDocid(docid);
+        for (String word : wordsList) {
+            float[] vec = docEmb.getContextVec(word);
+            if (vec == null) {
+                continue;
             }
+            if (!docWordVecMap.containsKey(word)) {
+                docWordVecMap.put(word, vec);
+                docWordCountMap.put(word, 1);
+            } else {
+                docWordCountMap.put(word, docWordCountMap.get(word) + 1);
+            }
+        }
 
-            float[] docidVec = new float[300];
-            for (String word : wordsList) {
-                if (docWordVecMap.containsKey(word)) {
-                    for (int j = 0; j < 300; j++) {
-                        docidVec[j] += docWordWeiMap.get(word) * docWordVecMap.get(word)[j];
-                    }
+        Iterator iter = docWordVecMap.entrySet().iterator();
+        while (iter.hasNext()) {
+            Map.Entry entry = (Map.Entry) iter.next();
+            // 获取key
+            String word = (String) entry.getKey();
+            int scale = 14858382 / DocNum;
+            float wordFreq = pool.getWordFreq(word) / scale;
+            float wordWei = (float) bm.getBM25((float) DocNum, wordFreq, (float) docWordCountMap.get(word), wordsList.size(), avgle);
+            docWordWeiMap.put((String) entry.getKey(), wordWei);
+        }
+
+        float[] docidVec = new float[300];
+        for (String word : wordsList) {
+            if (docWordVecMap.containsKey(word)) {
+                for (int j = 0; j < 300; j++) {
+                    docidVec[j] += docWordWeiMap.get(word) * docWordVecMap.get(word)[j];
                 }
             }
         }
 
+        for()
+        for (String doc : pool.getDocVecsDocids()) {
+            if (!doc.equals(docid)) {
+                String[] tempDocVec = pool.getDocVecByDocid(doc);
+                float[] tempDocVecFloat = new float[300];
+                for (int i = 0; i < 300; i++) {
+                    tempDocVecFloat[i] = Float.parseFloat(tempDocVec[i]);
+                }
+                float sim = new CosineSim().cossim(docidVec, tempDocVecFloat);
+                if (!Double.isNaN(sim)) {
+                    recommendSim.put(doc, sim);
+                }
+            }
+        }
 
+        log.info("recdocs have been selected");
 
-//        for (String doc : pool.getPoolAllDocids()) {
-//            if (!doc.equals(docid)) {
-//                float[] tempDocVec = new float[300];
-//                log.info(doc);
-//                String temp = "";
-//                for (String word : pool.getPoolWordsByDocid(doc)) {
-//                    if (docWordVecMap.containsKey(word)) {
-//                        temp += word;
-//                        temp += " ";
-//                        temp += docWordWeiMap.get(word);
-//                        temp += "\t";
-//                        for (int j = 0; j < 300; j++) {
-//                            tempDocVec[j] += docWordWeiMap.get(word) * docWordVecMap.get(word)[j];
-//                        }
-//                    }
-//                }
-//                log.info(temp);
-//
-//                int counttemp = 0;
-//                String temp1 = "";
-//                for (float docv : docidVec) {
-//                    counttemp++;
-//                    if (counttemp >= 10) {
-//                        break;
-//                    }
-//                    temp1 += docv;
-//                    temp1 += "\t";
-//                }
-//                log.info(temp1);
-//
-//                counttemp = 0;
-//                String temp2 = "";
-//                for (float docv : docidVec) {
-//                    counttemp++;
-//                    if (counttemp >= 10) {
-//                        break;
-//                    }
-//                    temp2 += docv;
-//                    temp2 += "\t";
-//                }
-//                log.info(temp2);
-//
-//                float sim = new CosineSim().cossim(docidVec, tempDocVec);
-//                log.info(sim);
-//                log.info("\n");
-//                if (!Double.isNaN(sim)) {
-//                    recommendSim.put(doc, sim);
-//                }
-//            }
-//        }
+        Map<String, Float> sortedSimMap = sortByValue(recommendSim);
+        log.info("sorted by sim value");
+        Map<String, String> temp = new HashMap<>();
+        temp.put("docid", docid);
+        temp.put("selfScore", docid);
+        temp.put("words", StringUtils.join(wordsList, " "));
+        log.info("docid " + docid);
+        log.info("score " + String.valueOf(sortedSimMap.get(docid)));
+        log.info("words " + StringUtils.join(wordsList, " "));
+        try {
+            Document docText = Jsoup.connect("https://www.yidianzixun.com/article/" + docid).get();
+            temp.put("doctitle", docText.title());
+            log.info("doctitle " + docText.title());
+        } catch (IOException e) {
+            e.printStackTrace();
+            log.error(e);
+        }
+        recommendForDocid.add(temp);
 
-//        log.info("recdocs have been selected");
-//
-//        Map<String, Float> sortedSimMap = sortByValue(recommendSim);
-//        Map<String, String> temp = new HashMap<>();
-//        temp.put("docid", docid);
-//        temp.put("selfScore", docid);
-//        temp.put("words", StringUtils.join(wordsList, " "));
-//        try {
-//            Document docText = Jsoup.connect("https://www.yidianzixun.com/article/" + docid).get();
-//            temp.put("doctitle", docText.title());
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//            log.error(e);
-//        }
-//        recommendForDocid.add(temp);
-//
-//        int recCount = 0;
-//        for (String docRec : sortedSimMap.keySet()) {
-//            recCount++;
-//            if (recCount >= 100) {
-//                break;
-//            } else {
-//                Map<String, String> tmp = new HashMap<>();
-//                tmp.put("docid", docRec);
-//                tmp.put("score", String.valueOf(sortedSimMap.get(docRec)));
-//                tmp.put("words", StringUtils.join(pool.getPoolWordsByDocid(docRec), " "));
-//                try {
-//                    Document docText = Jsoup.connect("https://www.yidianzixun.com/article/" + docRec).get();
-//                    tmp.put("doctitle", docText.title());
-//                } catch (IOException e) {
-//                    log.error(e);
-//                }
-//                recommendForDocid.add(tmp);
-//            }
-//        }
+        int recCount = 0;
+        for (String docRec : sortedSimMap.keySet()) {
+            recCount++;
+            if (recCount >= 100) {
+                break;
+            } else {
+                Map<String, String> tmp = new HashMap<>();
+                tmp.put("docid", docRec);
+                tmp.put("score", String.valueOf(sortedSimMap.get(docRec)));
+                tmp.put("words", StringUtils.join(getWordsByDocid(docRec), " "));
+                log.info("docid " + docRec);
+                log.info("score " + String.valueOf(sortedSimMap.get(docRec)));
+                log.info("words " + StringUtils.join(getWordsByDocid(docRec), " "));
+                try {
+                    Document docText = Jsoup.connect("https://www.yidianzixun.com/article/" + docRec).get();
+                    log.info("doctitle " + docText.title());
+                    tmp.put("doctitle", docText.title());
+                } catch (IOException e) {
+                    log.error(e);
+                }
+                recommendForDocid.add(tmp);
+            }
+        }
         return recommendForDocid;
     }
+
 
     public static void main(String[] args) {
         File logConfig = new File("log4j.properties");

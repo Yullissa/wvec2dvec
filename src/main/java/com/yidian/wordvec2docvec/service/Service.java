@@ -4,6 +4,7 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.yidian.wordvec2docvec.data.DocsPool;
+import com.yidian.wordvec2docvec.data.DocsVecCal;
 import com.yidian.wordvec2docvec.utils.DocEmbedding;
 import lombok.extern.log4j.Log4j;
 import org.apache.log4j.PropertyConfigurator;
@@ -31,6 +32,13 @@ public class Service implements Runnable {
     private int docNum = 14858382;
     @Parameter(names = "-avgle")
     private float avgle = 302.3f;
+    // task = trainDocVecs or getRecommend
+    @Parameter(names = "-task")
+    private String task = "getRecommend";
+    @Parameter(names = "-priDocFile")
+    private String priDocFile = "../data/doc_2018_04.txt";
+    @Parameter(names = "-docVecsFile")
+    private String docVecsFile = "../data/docVecs.txt";
 
     private ScheduledThreadPoolExecutor scheduledPool = new ScheduledThreadPoolExecutor(5,
             new ThreadFactoryBuilder().setNameFormat("fidset2news-function-scheduler-%d").build(),
@@ -38,12 +46,13 @@ public class Service implements Runnable {
 
     @Override
     public void run() {
-        log.info("Service Started");
+        log.info("Service Begin");
         try {
             Thread.sleep(10 * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        log.info("before init Service");
         initService();
 //        DocumentFilter filter = FastTextFilter.getInstance();
 //        DocumentCollect newsCollect = new DocumentCollect("indata_str_documents_info", filter);
@@ -58,12 +67,10 @@ public class Service implements Runnable {
         ServerConnector connector = new ServerConnector(server);
         connector.setPort(port);
         server.setConnectors(new Connector[]{connector});
-
-        log.warn("Use port = " + port);
         ServletContextHandler service = new ServletContextHandler(ServletContextHandler.SESSIONS);
         {
             service.setContextPath("/docvec");
-            service.addServlet(new ServletHolder(new Word2DocVecServlet(docNum,avgle)), "/recommend/*");
+            service.addServlet(new ServletHolder(new Word2DocVecServlet(docNum, avgle)), "/recommend/*");
         }
         ServletContextHandler root = new ServletContextHandler(ServletContextHandler.SESSIONS);
         {
@@ -101,8 +108,24 @@ public class Service implements Runnable {
     }
 
     private void initService() {
-        DocEmbedding.defaultInstance();
-        DocsPool.defaultInstance();
+        log.info("begin initService");
+        // task = trainDocVecs or getRecomend
+        // priDocFile  docVecsFile
+        log.info(task);
+        if (task.equals("trainDocVecs")) {
+            log.info("docVecsFile");
+            File decvec = new File(docVecsFile);
+            if (!decvec.exists()) {
+                DocsVecCal.defaultInstance(task,priDocFile, docVecsFile, docNum, avgle);
+            }
+        } else {
+            log.info("begin docembedding");
+            DocEmbedding.defaultInstance();
+            log.info("end docembedding");
+            log.info("begin docspool");
+            DocsPool.defaultInstance(task);
+            log.info("end docspool");
+        }
     }
 
     public static void main(String[] args) {

@@ -16,65 +16,43 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 @Data
 public class DocsPool {
     protected volatile Map<String, String[]> documentInfoMap = Maps.newConcurrentMap();
+    protected volatile Map<String, String[]> docVecInfoMap = Maps.newConcurrentMap();
     protected volatile Map<String, Integer> wordFreMap = Maps.newConcurrentMap();
     protected volatile HashSet<String> wordSet = new HashSet();
 
-
-    //    protected volatile LoadingCache<String, List<DocumentInfo>> fetchCache = CacheBuilder.newBuilder()
-//            .maximumSize(200000)
-//            .recordStats()
-//            .build(new CacheLoader<String, List<DocumentInfo>>() {
-//                @Override
-//                public List<DocumentInfo> load(String fid){
-//                    try{
-//                        return processFetch(fid);
-//                    }catch (NumberFormatException e){
-//                        e.printStackTrace();
-//                        log.error(e);
-//                    }
-//                    return processFetch(fid);
-//                }
-//            });
-    private volatile Map<String, Integer> fidCnt = Maps.newHashMap();
-    protected volatile ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
     private static volatile DocsPool instance;
 
-
-    public static DocsPool defaultInstance() {
+    public static DocsPool defaultInstance(String task) {
         if (instance == null) {
             synchronized (DocsPool.class) {
                 if (instance == null) {
-                    instance = new DocsPool();
+                    instance = new DocsPool(task);
                 }
             }
         }
         return instance;
     }
 
-    public DocsPool() {
-        init("../data/doc_2018_04.txt", "../data/word_idf.txt","../data/lda.dict.filter.v2");
+    public DocsPool(String task) {
+        init(task, "../data/word_idf.txt", "../data/lda.dict.filter.v2", "../data/docsVec.txt");
     }
 
-    private void init(String docFile, String wordFreq, String wordDict) {
-        if (docFile == null) {
-            System.exit(-1);
-        }
+    private void init(String task, String wordFreq, String wordDict, String docVecFile) {
         try {
             log.info("load word frequency file:" + wordFreq);
             loadIdfFromFile(wordFreq);
             log.info("word frequency file loaded.");
-            log.info("load word frequency file:" + wordDict);
+            log.info("load word dict file:" + wordDict);
             getDict(wordDict);
-            log.info("word frequency file loaded.");
-            log.info("load doc file:" + docFile);
-            loadDataFromFile(docFile);
-            log.info("doc file loaded.");
+            log.info("word dict file loaded.");
+            if (!task.equals("trainDocVecs")) {
+                log.info("in DocsPool init" + task);
+                log.info("load docVec file:" + docVecFile);
+                loadDocsVecFromFile(docVecFile);
+                log.info("docVec file loaded.");
+            }
         } catch (Exception e) {
             log.error(e);
-            System.exit(-1);
-        }
-        if (documentInfoMap.size() == 0) {
-            log.error("doc is empty");
             System.exit(-1);
         }
     }
@@ -82,16 +60,47 @@ public class DocsPool {
 
     public boolean loadDataFromFile(String fname) {
         try {
+            docVecInfoMap.clear();
+            FileInputStream fis = new FileInputStream(fname);
+            InputStreamReader isr = new InputStreamReader(fis);
+            BufferedReader br = new BufferedReader(isr);
+            String data;
+            int i=0;
+            while ((data = br.readLine()) != null) {
+                if (data.split("\t").length == 3) {
+                    i++;
+                    String docid = data.split("\t")[1];
+                    String docWords = data.split("\t")[2];
+                    String[] docWordsList = docWords.split("\\s+");
+                    documentInfoMap.put(docid, docWordsList);
+                    //14858382
+                    if (i % 100000 == 0) {
+                        log.info("load prim data : line " + i + ":" + docid);
+                    }
+                }
+            }
+            br.close();
+            isr.close();
+            fis.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
+
+    public boolean loadDocsVecFromFile(String fname) {
+        try {
+            docVecInfoMap.clear();
             FileInputStream fis = new FileInputStream(fname);
             InputStreamReader isr = new InputStreamReader(fis);
             BufferedReader br = new BufferedReader(isr);
             String data;
             while ((data = br.readLine()) != null) {
-                if (data.split("\t").length == 3) {
-                    String docid = data.split("\t")[1];
-                    String docWords = data.split("\t")[2];
-                    String[] docWordsList = docWords.split("\\s+");
-                    documentInfoMap.put(docid, docWordsList);
+                if (data.split("\t").length == 2) {
+                    String docid = data.split("\t")[0];
+                    String docVec = data.split("\t")[1];
+                    String[] docVecList = docVec.split("\\s+");
+                    docVecInfoMap.put(docid, docVecList);
                 }
             }
             br.close();
@@ -105,6 +114,7 @@ public class DocsPool {
 
     public boolean loadIdfFromFile(String fname) {
         try {
+            wordFreMap.clear();
             FileInputStream fis = new FileInputStream(fname);
             InputStreamReader isr = new InputStreamReader(fis);
             BufferedReader br = new BufferedReader(isr);
@@ -127,6 +137,7 @@ public class DocsPool {
 
     private void getDict(String fileName) {
         try {
+            wordSet.clear();
             log.info("load Dict...");
             File file = new File(fileName);
             // 读取文件，并且以utf-8的形式写出去
@@ -143,11 +154,28 @@ public class DocsPool {
     }
 
     public Set<String> getPoolAllDocids() {
-        return documentInfoMap.keySet();
+        if (docVecInfoMap.size() != 0) {
+            return docVecInfoMap.keySet();
+        } else if (documentInfoMap.size() != 0) {
+            return documentInfoMap.keySet();
+        }
+        return null;
     }
+
+    public Set<String> getDocVecsDocids() {
+        if (docVecInfoMap.size() != 0) {
+            return docVecInfoMap.keySet();
+        }
+        return null;
+    }
+
 
     public String[] getPoolWordsByDocid(String docid) {
         return documentInfoMap.get(docid);
+    }
+
+    public String[] getDocVecByDocid(String docid) {
+        return docVecInfoMap.get(docid);
     }
 
     public int getWordFreq(String word) {

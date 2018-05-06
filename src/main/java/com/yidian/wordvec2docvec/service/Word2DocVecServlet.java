@@ -6,6 +6,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hipu.util.HttpUtil;
 import com.yidian.wordvec2docvec.core.WordVec2DocVec;
+import com.yidian.wordvec2docvec.data.DocsVecCal;
 import org.apache.commons.lang3.tuple.Pair;
 
 import javax.servlet.ServletException;

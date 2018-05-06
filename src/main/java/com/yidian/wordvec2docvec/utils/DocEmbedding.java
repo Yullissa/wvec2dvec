@@ -23,6 +23,7 @@ public class DocEmbedding {
     private static VecInfo context_vec_info = new VecInfo();
 
     private static volatile DocEmbedding instance;
+
     public static DocEmbedding defaultInstance() {
         if (instance == null) {
             synchronized (DocEmbedding.class) {
@@ -33,6 +34,7 @@ public class DocEmbedding {
         }
         return instance;
     }
+
     static class VecInfo {
         int num;
         int size;
@@ -53,7 +55,7 @@ public class DocEmbedding {
         }
     }
 
-    public DocEmbedding(){
+    public DocEmbedding() {
 //        init("../data/target.vec", target_vec_info);
 //        init("../data/context.vec", context_vec_info);
         init("../data/word.vec", context_vec_info);
@@ -99,7 +101,7 @@ public class DocEmbedding {
             word_vec_info.size = Integer.parseInt(readString(dis));
             log.info("size:" + word_vec_info.size);
 
-            word_vec_info.vec = new HashMap<>((int)(word_vec_info.num / 0.75 + 10));
+            word_vec_info.vec = new HashMap<>((int) (word_vec_info.num / 0.75 + 10));
 
             for (int i = 0; i < word_vec_info.num; ++i) {
                 String id = readString(dis);
@@ -109,9 +111,9 @@ public class DocEmbedding {
                     value = readFloat(dis);
                     vec[j] = value;
                 }
-                if (i % 10000 == 0) {
-                    log.info("load line " + i + ":" + id);
-                }
+//                if (i % 10000 == 0) {
+//                    log.info("load line " + i + ":" + id);
+//                }
                 word_vec_info.vec.put(id, vec);
                 dis.read();
             }
@@ -127,11 +129,11 @@ public class DocEmbedding {
         }
     }
 
-    public  float [] getTargetVec(String key){
+    public float[] getTargetVec(String key) {
         return target_vec_info.vec.getOrDefault(key, null);
     }
 
-    public  float [] getContextVec(String key){
+    public float[] getContextVec(String key) {
         return context_vec_info.vec.getOrDefault(key, null);
     }
 
@@ -156,11 +158,11 @@ public class DocEmbedding {
         int i = -1;
         StringBuilder sb = new StringBuilder();
 
-        while(b != 32 && b != 10) {
+        while (b != 32 && b != 10) {
             ++i;
             bytes[i] = b;
             b = dis.readByte();
-            if(i == 49) {
+            if (i == 49) {
                 sb.append(new String(bytes));
                 i = -1;
                 bytes = new byte[50];
@@ -170,13 +172,13 @@ public class DocEmbedding {
         return sb.toString();
     }
 
-    public static String getSegTitleWords(String segTitle){
+    public static String getSegTitleWords(String segTitle) {
         StringBuilder sb = new StringBuilder();
-        for(char ch: segTitle.toCharArray()){
-            if(stopwords_map.containsKey(String.valueOf(ch))){
+        for (char ch : segTitle.toCharArray()) {
+            if (stopwords_map.containsKey(String.valueOf(ch))) {
                 continue;
             }
-            if(ch == ' '){
+            if (ch == ' ') {
                 continue;
             }
             sb.append(ch);
@@ -184,22 +186,23 @@ public class DocEmbedding {
         return sb.toString();
     }
 
-    public static Set<String> getJaccardSet(String txt, int window){
+    public static Set<String> getJaccardSet(String txt, int window) {
         Set<String> ret = Sets.newHashSet();
 //        for(int i = window; i <= txt.length(); i++){
 //            ret.add(txt.substring(i - window, i));
 //        }
-        for(char ch: txt.toCharArray()){
+        for (char ch : txt.toCharArray()) {
             ret.add(String.valueOf(ch));
         }
         return ret;
     }
-    public static double JaccardScore(String words1, String words2){
+
+    public static double JaccardScore(String words1, String words2) {
         Set<String> set1 = getJaccardSet(words1, 3);
         Set<String> set2 = getJaccardSet(words2, 3);
         int cross_num = 0;
-        for(String str: set1){
-            if(set2.contains(str)){
+        for (String str : set1) {
+            if (set2.contains(str)) {
                 cross_num += 1;
             }
         }
@@ -209,8 +212,8 @@ public class DocEmbedding {
     }
 
 
-    public static byte[] float2cbyte(float val){
-        int intBits =  Float.floatToIntBits(val);
+    public static byte[] float2cbyte(float val) {
+        int intBits = Float.floatToIntBits(val);
         byte[] bytes = new byte[4];
         bytes[3] = (byte) (intBits >> 24);
         bytes[2] = (byte) (intBits >> 16);
@@ -219,7 +222,7 @@ public class DocEmbedding {
         return bytes;
     }
 
-    public static byte[] int2cbyte(int val){
+    public static byte[] int2cbyte(int val) {
         byte[] bytes = new byte[4];
         bytes[3] = (byte) (val >> 24);
         bytes[2] = (byte) (val >> 16);
@@ -229,7 +232,7 @@ public class DocEmbedding {
     }
 
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
 //        float [] vec = DocEmbedding.defaultInstance().getContextVec("中国");
 //        for(int i = 0; i < vec.length; i++){
 //            System.out.println(vec[i]);
