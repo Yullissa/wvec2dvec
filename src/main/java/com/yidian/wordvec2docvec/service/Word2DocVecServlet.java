@@ -5,7 +5,6 @@ import com.google.common.collect.Maps;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.hipu.util.HttpUtil;
-import com.yidian.wordvec2docvec.core.FidSet2news;
 import com.yidian.wordvec2docvec.core.WordVec2DocVec;
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -22,7 +21,13 @@ import java.util.Map;
  */
 public class Word2DocVecServlet extends HttpServlet {
     private static Gson gson = new GsonBuilder().disableHtmlEscaping().create();
+    private int docNum;
+    private float avgle;
 
+    public Word2DocVecServlet(int docNum,float avgle){
+        this.docNum = docNum;
+        this.avgle = avgle;
+    }
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //        log.info("ACCESS:" + request.getQueryString());
@@ -34,7 +39,7 @@ public class Word2DocVecServlet extends HttpServlet {
         Map<String, Object> retMap = Maps.newHashMap();
         retMap.put("status", "success");
         retMap.put("code", 0);
-        retMap.put("result", WordVec2DocVec.getInstance().recommend(docid));
+        retMap.put("result", WordVec2DocVec.getInstance().recommend(docid,docNum,avgle));
         HttpUtil.setResponse(response, gson.toJson(retMap));
     }
 

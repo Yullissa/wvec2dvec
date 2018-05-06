@@ -3,12 +3,7 @@ package com.yidian.wordvec2docvec.service;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
-import com.hipu.news.dynamic.dao.NewsDocumentDAO;
-import com.yidian.wordvec2docvec.core.FidSet2news;
 import com.yidian.wordvec2docvec.data.DocsPool;
-import com.yidian.wordvec2docvec.filter.DocumentFilter;
-import com.yidian.wordvec2docvec.filter.FastTextFilter;
-import com.yidian.wordvec2docvec.task.DocumentCollect;
 import com.yidian.wordvec2docvec.utils.DocEmbedding;
 import lombok.extern.log4j.Log4j;
 import org.apache.log4j.PropertyConfigurator;
@@ -25,7 +20,6 @@ import org.eclipse.jetty.util.thread.QueuedThreadPool;
 import java.io.File;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
 
 @Log4j
 public class Service implements Runnable {
@@ -33,6 +27,10 @@ public class Service implements Runnable {
     private int port = 8000;
     @Parameter(names = "-config")
     private String beanConfig;
+    @Parameter(names = "-docNum")
+    private int docNum = 14858382;
+    @Parameter(names = "-avgle")
+    private float avgle = 302.3f;
 
     private ScheduledThreadPoolExecutor scheduledPool = new ScheduledThreadPoolExecutor(5,
             new ThreadFactoryBuilder().setNameFormat("fidset2news-function-scheduler-%d").build(),
@@ -64,8 +62,8 @@ public class Service implements Runnable {
         log.warn("Use port = " + port);
         ServletContextHandler service = new ServletContextHandler(ServletContextHandler.SESSIONS);
         {
-            service.setContextPath("/wordvectodocvec");
-            service.addServlet(new ServletHolder(new Word2DocVecServlet()), "/recdocvec/*");
+            service.setContextPath("/docvec");
+            service.addServlet(new ServletHolder(new Word2DocVecServlet(docNum,avgle)), "/recommend/*");
         }
         ServletContextHandler root = new ServletContextHandler(ServletContextHandler.SESSIONS);
         {

@@ -1,20 +1,11 @@
 package com.yidian.wordvec2docvec.data;
 
-import com.google.common.cache.CacheBuilder;
-import com.google.common.cache.CacheLoader;
-import com.google.common.cache.LoadingCache;
-import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.hipu.news.dynamic.NewsDocument;
-import com.yidian.wordvec2docvec.utils.NewsDocumentCache;
 import lombok.Data;
 import lombok.extern.log4j.Log4j;
-import org.codehaus.jackson.JsonNode;
-import scala.Int;
 
 import java.io.*;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
