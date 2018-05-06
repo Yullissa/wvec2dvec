@@ -1,0 +1,686 @@
+2018-05-04 16:29:43,938 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:87)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:64)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:133)
+
+2018-05-04 20:40:08,737 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:178)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 13 more
+
+2018-05-04 20:40:08,851 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:178)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 13 more
+
+2018-05-04 20:40:08,961 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:178)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 13 more
+
+2018-05-04 21:13:12,118 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:70)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:133)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:156)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 21:13:12,233 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:70)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:133)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:156)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 21:13:12,345 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:70)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:133)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:156)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 21:14:00,360 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:70)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:133)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:157)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 21:14:00,500 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:70)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:133)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:157)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 21:14:00,618 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:70)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:133)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:157)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 21:17:30,853  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:/Users/admin/IdeaProjects/word2vec/word.vec
+2018-05-04 21:17:48,200  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from /Users/admin/IdeaProjects/word2vec/word.vec
+2018-05-04 21:17:48,202  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-04 21:17:48,208  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-04 21:17:48,212  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-04 21:18:25,851  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-04 21:18:35,829  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-04 21:18:46,140  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-04 21:18:55,842  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-04 21:19:05,629  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-04 21:19:15,482  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-04 21:19:25,176  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-04 21:19:34,920  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-04 21:19:45,080  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-04 21:19:54,873  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-04 21:20:04,572  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-04 21:20:14,232  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-04 21:20:24,070  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-04 21:20:33,814  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-04 21:20:43,507  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-04 21:20:53,260  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-04 21:21:02,980  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-04 21:21:12,717  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-04 21:21:22,403  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-04 21:21:32,383  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-04 21:21:42,101  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-04 21:21:51,802  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-04 21:22:01,516  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-04 21:22:11,197  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-04 21:22:21,181  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-04 21:22:30,903  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-04 21:22:40,605  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-04 21:22:50,305  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-04 21:23:00,663  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-04 21:23:10,431  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-04 21:23:20,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-04 21:23:29,879  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-04 21:23:39,588  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-04 21:23:49,353  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-04 21:23:59,098  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-04 21:24:08,864  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-04 21:24:18,528  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-04 21:24:28,412  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-04 21:24:38,106  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-04 21:24:47,824  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-04 21:24:57,616  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-04 21:25:07,591  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-04 21:25:17,328  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-04 21:25:27,045  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-04 21:25:36,807  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-04 21:25:46,455  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-04 21:25:56,230  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-04 21:26:06,508  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-04 21:26:16,174  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-04 21:26:25,954  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-04 21:26:35,614  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-04 21:26:45,301  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-04 21:26:55,068  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-04 21:27:04,744  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-04 22:36:40,847  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-04 22:54:40,669 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:153)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:188)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:54:40,783 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:153)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:188)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:54:40,891 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/103.216.218.117] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:153)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:188)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:56:14,188 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:153)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:188)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:56:14,308 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:153)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:188)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:56:14,419 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:153)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:188)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:57:39,595 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:154)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:189)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:57:39,710 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:154)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:189)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:57:39,823 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:154)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:189)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:59:34,236 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:154)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:189)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:59:34,348 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:154)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:189)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 22:59:34,460 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:154)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:189)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 23:00:54,429 ERROR com.yidian.wordvec2docvec.utils.HttpUtils:70 - org.apache.http.conn.ConnectTimeoutException: Connect to cl-k8s.ha.in.yidian.com:80 [cl-k8s.ha.in.yidian.com/10.120.91.68] failed: connect timed out
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:143)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:107)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at com.yidian.wordvec2docvec.utils.HttpUtils.get(HttpUtils.java:66)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.getWordsByDocid(WordVec2DocVec.java:90)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.recommend(WordVec2DocVec.java:154)
+	at com.yidian.wordvec2docvec.core.WordVec2DocVec.main(WordVec2DocVec.java:189)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 14 more
+
+2018-05-04 23:02:57,505  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:/Users/admin/IdeaProjects/word2vec/word10000.vec
+2018-05-04 23:02:57,511  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from /Users/admin/IdeaProjects/word2vec/word10000.vec
+2018-05-04 23:02:57,511  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-04 23:02:57,513  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-04 23:02:57,513  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-04 23:02:57,682 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:119 - java.io.EOFException
+2018-05-04 23:02:57,683  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.

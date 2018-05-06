@@ -1,0 +1,85 @@
+2018-05-03 15:59:48,910  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 15:59:48,914  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 15:59:48,916 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 15:59:48,916  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 15:59:48,920 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:00:16,990  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:00:16,994  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:00:16,994 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:00:16,994  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:00:16,998 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:00:35,363  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:00:35,374  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:00:35,375 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:00:35,375  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:00:35,384 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:03:12,248  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:03:12,251  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:03:12,251 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:03:12,252  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:03:12,254 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:12:49,122  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:12:49,135  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:12:49,136 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:12:49,137  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:12:49,145 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:16:39,970  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:16:39,974  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:16:39,980 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:16:39,980  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:16:39,985 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:16:51,675  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:16:51,679  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:16:51,679 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:16:51,679  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:16:51,682 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:19:01,262  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:19:01,267  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:19:01,268 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:19:01,268  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:19:01,274 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:19:21,776  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:19:21,783  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:19:21,783 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:19:21,784  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:19:21,790 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:24:00,339  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:65 - load word vec:../data/target.vec
+2018-05-03 16:24:07,611  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:91 - load vec from ../data/target.vec
+2018-05-03 16:24:07,612 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:117 - java.io.FileNotFoundException: ../data/target.vec (No such file or directory)
+2018-05-03 16:24:07,825  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - word vec loaded.
+2018-05-03 16:24:10,219 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:74 - model formate error.
+2018-05-03 16:26:26,552  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:/Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 16:26:55,993  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from /Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 16:26:56,951  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-03 16:26:57,756  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-03 16:26:57,954  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-03 16:26:57,967 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:119 - java.io.EOFException
+2018-05-03 16:26:57,967  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-03 16:28:53,965  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:/Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 16:28:55,829  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from /Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 16:28:55,830  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-03 16:28:55,837  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-03 16:28:55,838  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-03 16:44:57,870 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:120 - java.io.EOFException
+2018-05-03 16:44:57,877  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-03 17:01:07,983  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:/Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 17:01:11,430  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from /Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 17:01:11,431  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-03 17:01:11,434  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-03 17:01:11,434  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-03 17:01:20,316 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:120 - java.io.EOFException
+2018-05-03 17:01:20,317  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-03 17:02:23,905  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:/Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 17:02:28,771  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from /Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 17:02:28,772  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-03 17:02:28,785  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-03 17:02:28,786  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-03 17:02:37,867 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:119 - java.io.EOFException
+2018-05-03 17:02:37,867  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-03 17:03:49,344  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:/Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 17:03:52,756  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from /Users/admin/IdeaProjects/word2vec/word100.vec
+2018-05-03 17:03:52,757  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-03 17:03:52,768  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-03 17:03:52,769  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-03 17:04:00,460 ERROR com.yidian.wordvec2docvec.utils.DocEmbedding:119 - java.io.EOFException
+2018-05-03 17:04:00,463  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
