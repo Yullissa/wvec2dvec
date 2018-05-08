@@ -1,0 +1,582 @@
+2018-05-06 09:06:31,008  INFO com.yidian.wordvec2docvec.data.DocsPool:63 - load word frequency file:../data/word_idf.txt
+2018-05-06 09:06:32,449  INFO com.yidian.wordvec2docvec.data.DocsPool:65 - word frequency file loaded.
+2018-05-06 09:06:32,449  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 09:06:32,450  INFO com.yidian.wordvec2docvec.data.DocsPool:130 - load Dict...
+2018-05-06 09:06:32,814  INFO com.yidian.wordvec2docvec.data.DocsPool:68 - word frequency file loaded.
+2018-05-06 09:06:32,814  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - load doc file:../data/doc_2018_04.txt
+2018-05-06 10:14:41,919  INFO com.yidian.wordvec2docvec.data.DocsPool:63 - load word frequency file:../data/word_idf.txt
+2018-05-06 10:14:43,722  INFO com.yidian.wordvec2docvec.data.DocsPool:65 - word frequency file loaded.
+2018-05-06 10:14:43,722  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 10:14:43,722  INFO com.yidian.wordvec2docvec.data.DocsPool:130 - load Dict...
+2018-05-06 10:14:44,121  INFO com.yidian.wordvec2docvec.data.DocsPool:68 - word frequency file loaded.
+2018-05-06 10:14:44,121  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - load doc file:../data/doc_2018_04.txt
+2018-05-06 10:14:44,348  INFO com.yidian.wordvec2docvec.data.DocsPool:71 - doc file loaded.
+2018-05-06 10:14:44,350  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 10:14:44,351  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 10:14:44,351  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 10:14:44,351  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 10:14:44,352  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 10:14:44,708  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 10:14:46,096  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 10:14:46,193  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 10:14:46,295  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 10:14:46,474  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 10:14:46,571  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 10:14:46,669  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 10:14:46,774  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 10:14:46,975  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 10:14:47,071  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 10:14:47,169  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 10:14:47,270  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 10:14:47,371  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 10:14:48,092  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 10:14:48,193  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 10:14:48,333  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 10:14:48,443  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 10:14:48,552  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 10:14:48,773  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 10:14:48,918  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 10:14:49,024  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 10:14:49,129  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 10:14:49,239  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 10:14:49,978  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 10:14:50,091  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 10:14:50,216  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 10:14:50,462  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 10:14:50,876  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 10:14:51,138  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 10:14:51,256  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 10:14:51,370  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 10:14:51,488  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 10:14:51,637  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 10:14:51,832  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 10:14:51,963  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 10:14:52,065  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 10:14:52,173  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 10:14:52,285  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 10:14:52,483  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 10:14:52,581  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 10:14:52,680  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 10:14:52,790  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 10:14:52,892  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 10:14:53,488  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 10:14:53,590  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 10:14:53,689  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 10:14:53,883  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 10:14:53,983  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 10:14:54,082  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 10:14:54,181  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 10:14:54,349  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 10:14:54,451  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 10:14:54,554  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 10:14:54,770  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 10:14:54,794  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-06 10:55:22,397  INFO com.yidian.wordvec2docvec.data.DocsPool:63 - load word frequency file:../data/word_idf.txt
+2018-05-06 10:55:24,186  INFO com.yidian.wordvec2docvec.data.DocsPool:65 - word frequency file loaded.
+2018-05-06 10:55:24,211  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 10:55:24,211  INFO com.yidian.wordvec2docvec.data.DocsPool:130 - load Dict...
+2018-05-06 10:55:24,784  INFO com.yidian.wordvec2docvec.data.DocsPool:68 - word frequency file loaded.
+2018-05-06 10:55:24,784  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - load doc file:../data/doc_2018_04.txt
+2018-05-06 10:55:24,978  INFO com.yidian.wordvec2docvec.data.DocsPool:71 - doc file loaded.
+2018-05-06 10:55:24,985  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 10:55:24,985  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 10:55:24,986  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 10:55:24,986  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 10:55:24,986  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 10:55:25,350  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 10:55:25,795  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 10:55:27,161  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 10:55:27,315  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 10:55:27,468  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 10:55:27,642  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 10:55:27,745  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 10:55:27,864  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 10:55:27,979  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 10:55:28,372  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 10:55:28,508  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 10:55:28,626  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 10:55:28,744  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 10:55:28,874  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 10:55:29,120  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 10:55:30,040  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 10:55:30,146  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 10:55:30,256  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 10:55:30,372  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 10:55:30,554  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 10:55:30,673  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 10:55:30,817  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 10:55:30,931  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 10:55:31,049  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 10:55:31,238  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 10:55:31,364  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 10:55:31,474  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 10:55:32,005  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 10:55:32,122  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 10:55:32,239  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 10:55:32,365  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 10:55:32,556  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 10:55:32,672  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 10:55:32,793  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 10:55:32,963  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 10:55:33,071  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 10:55:33,306  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 10:55:33,421  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 10:55:33,533  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 10:55:34,169  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 10:55:34,299  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 10:55:34,421  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 10:55:34,645  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 10:55:34,757  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 10:55:34,883  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 10:55:35,070  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 10:55:35,186  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 10:55:35,693  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 10:55:35,820  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 10:55:35,937  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 10:55:36,064  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 10:55:36,177  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 10:55:36,306  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 10:55:36,443  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 10:55:36,464  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-06 11:34:35,321  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:34:37,195  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:34:37,195  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:34:37,195  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-06 11:34:37,545  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:34:37,545  INFO com.yidian.wordvec2docvec.data.DocsPool:70 - load doc file:../data/doc_2018_04.txt
+2018-05-06 11:34:37,786  INFO com.yidian.wordvec2docvec.data.DocsPool:72 - doc file loaded.
+2018-05-06 11:34:37,793  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 11:34:37,793  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 11:34:37,794  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 11:34:37,794  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 11:34:37,795  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 11:34:38,228  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 11:34:39,244  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 11:34:39,382  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 11:34:39,490  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 11:34:39,692  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 11:34:39,810  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 11:34:39,926  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 11:34:40,053  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 11:34:40,426  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 11:34:40,535  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 11:34:40,646  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 11:34:40,763  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 11:34:40,872  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 11:34:41,049  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 11:34:41,937  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 11:34:42,062  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 11:34:42,180  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 11:34:42,307  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 11:34:42,420  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 11:34:42,631  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 11:34:42,784  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 11:34:42,903  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 11:34:43,021  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 11:34:43,241  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 11:34:43,371  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 11:34:43,506  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 11:34:43,624  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 11:34:44,284  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 11:34:44,409  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 11:34:44,521  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 11:34:44,760  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 11:34:44,868  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 11:34:44,982  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 11:34:45,134  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 11:34:45,263  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 11:34:45,376  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 11:34:45,975  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 11:34:46,090  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 11:34:46,216  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 11:34:46,422  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 11:34:46,527  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 11:34:46,641  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 11:34:46,835  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 11:34:46,952  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 11:34:47,064  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 11:34:47,241  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 11:34:47,355  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 11:34:47,521  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 11:34:47,625  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 11:34:47,744  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 11:34:47,941  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 11:34:48,051  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 11:34:48,162  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 11:34:48,908  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 11:34:48,932  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-06 11:35:30,682  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:35:31,912  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:35:31,912  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:35:31,912  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-06 11:35:32,238  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:35:32,238  INFO com.yidian.wordvec2docvec.data.DocsPool:70 - load doc file:../data/doc_2018_04.txt
+2018-05-06 11:35:32,458  INFO com.yidian.wordvec2docvec.data.DocsPool:72 - doc file loaded.
+2018-05-06 11:35:32,472  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 11:35:32,472  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 11:35:32,474  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 11:35:32,474  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 11:35:32,474  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 11:35:32,766  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 11:35:33,821  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 11:35:33,931  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 11:35:34,034  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 11:35:34,195  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 11:35:34,296  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 11:35:34,408  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 11:35:34,509  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 11:35:34,677  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 11:35:34,775  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 11:35:34,878  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 11:35:34,978  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 11:35:35,087  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 11:35:36,193  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 11:35:36,313  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 11:35:36,471  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 11:35:36,605  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 11:35:36,753  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 11:35:37,005  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 11:35:37,117  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 11:35:37,228  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 11:35:37,330  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 11:35:37,435  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 11:35:37,931  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 11:35:38,031  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 11:35:38,129  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 11:35:38,228  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 11:35:38,326  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 11:35:38,529  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 11:35:38,627  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 11:35:38,726  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 11:35:38,824  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 11:35:38,929  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 11:35:39,069  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 11:35:39,168  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 11:35:39,266  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 11:35:39,366  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 11:35:39,473  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 11:35:39,662  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 11:35:39,763  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 11:35:39,860  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 11:35:39,971  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 11:35:40,974  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 11:35:41,079  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 11:35:41,178  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 11:35:41,276  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 11:35:41,509  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 11:35:41,616  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 11:35:41,724  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 11:35:41,822  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 11:35:41,998  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 11:35:42,100  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 11:35:42,202  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 11:35:42,302  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 11:35:42,983  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-06 11:39:49,420  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:39:51,559  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:39:51,560  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:39:51,561  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:39:52,013  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:39:52,014  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:39:52,038  INFO com.yidian.wordvec2docvec.data.DocsPool:75 - docVec file loaded.
+2018-05-06 11:39:52,038 ERROR com.yidian.wordvec2docvec.data.DocsPool:82 - doc is empty
+2018-05-06 11:40:08,338  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:40:09,823  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:40:09,823  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:40:09,823  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:40:10,085  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:40:10,085  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:40:10,103  INFO com.yidian.wordvec2docvec.data.DocsPool:75 - docVec file loaded.
+2018-05-06 11:40:10,103 ERROR com.yidian.wordvec2docvec.data.DocsPool:82 - doc is empty
+2018-05-06 11:41:17,906  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:41:19,629  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:41:19,629  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:41:19,629  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:41:19,825  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:41:19,825  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:41:19,947  INFO com.yidian.wordvec2docvec.data.DocsPool:75 - docVec file loaded.
+2018-05-06 11:41:19,947 ERROR com.yidian.wordvec2docvec.data.DocsPool:82 - doc is empty
+2018-05-06 11:41:42,649  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:41:44,358  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:41:44,358  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:41:44,358  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:41:44,665  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:41:44,665  INFO com.yidian.wordvec2docvec.data.DocsPool:70 - load doc file:../data/doc_2018_04.txt
+2018-05-06 11:41:44,854  INFO com.yidian.wordvec2docvec.data.DocsPool:72 - doc file loaded.
+2018-05-06 11:41:44,854  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:41:50,751  INFO com.yidian.wordvec2docvec.data.DocsPool:75 - docVec file loaded.
+2018-05-06 11:41:50,766  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 11:41:50,766  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 11:41:50,767  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 11:41:50,767  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 11:41:50,767  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 11:41:51,018  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 11:41:51,117  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 11:41:51,188  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 11:41:51,263  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 11:41:51,488  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 11:41:51,562  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 11:41:51,634  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 11:41:51,704  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 11:41:51,783  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 11:41:51,912  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 11:41:52,491  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 11:41:52,565  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 11:41:52,633  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 11:41:52,705  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 11:41:52,797  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 11:41:52,941  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 11:41:53,013  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 11:41:53,085  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 11:41:53,159  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 11:41:53,251  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 11:41:53,488  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 11:41:53,571  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 11:41:53,643  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 11:41:53,723  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 11:41:54,900  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 11:41:54,971  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 11:41:55,043  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 11:41:55,118  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 11:41:55,329  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 11:41:55,401  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 11:41:55,472  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 11:41:55,541  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 11:41:55,611  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 11:41:56,023  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 11:41:56,095  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 11:41:56,166  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 11:41:56,238  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 11:41:56,355  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 11:41:56,431  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 11:41:56,519  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 11:41:56,605  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 11:41:56,686  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 11:41:56,881  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 11:41:56,957  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 11:41:57,038  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 11:41:57,119  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 11:41:57,199  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 11:41:57,454  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 11:41:57,543  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 11:41:57,622  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 11:41:57,704  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 11:41:58,359  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 11:41:58,444  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 11:41:58,522  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 11:41:58,537  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-06 11:46:21,515  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:46:22,921  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:46:22,921  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:46:22,931  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:46:23,418  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:46:23,418  INFO com.yidian.wordvec2docvec.data.DocsPool:70 - load doc file:../data/doc_2018_04.txt
+2018-05-06 11:46:24,368  INFO com.yidian.wordvec2docvec.data.DocsPool:72 - doc file loaded.
+2018-05-06 11:46:24,368  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:46:24,509  INFO com.yidian.wordvec2docvec.data.DocsPool:75 - docVec file loaded.
+2018-05-06 11:46:24,513  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 11:46:24,513  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 11:46:24,514  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 11:46:24,514  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 11:46:24,514  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 11:46:24,756  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 11:46:25,059  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 11:46:25,187  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 11:46:25,318  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 11:46:25,596  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 11:46:25,768  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 11:46:25,923  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 11:46:26,098  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 11:46:26,986  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 11:46:27,096  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 11:46:27,205  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 11:46:27,422  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 11:46:27,540  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 11:46:27,649  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 11:46:27,765  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 11:46:27,924  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 11:46:28,044  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 11:46:28,155  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 11:46:28,258  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 11:46:28,773  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 11:46:28,882  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 11:46:28,992  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 11:46:29,100  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 11:46:29,204  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 11:46:29,309  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 11:46:29,510  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 11:46:29,615  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 11:46:29,720  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 11:46:29,826  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 11:46:29,929  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 11:46:30,492  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 11:46:30,605  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 11:46:30,711  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 11:46:30,817  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 11:46:30,924  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 11:46:31,078  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 11:46:31,182  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 11:46:31,287  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 11:46:31,393  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 11:46:31,509  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 11:46:31,688  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 11:46:31,800  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 11:46:31,914  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 11:46:32,040  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 11:46:32,147  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 11:46:32,324  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 11:46:32,429  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 11:46:32,543  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 11:46:32,649  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 11:46:32,761  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 11:46:32,938  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 11:46:33,051  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 11:46:33,161  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 11:46:33,267  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 11:46:33,824  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-06 11:50:21,515  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:50:23,213  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:50:23,214  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:50:23,215  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:50:23,639  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:50:23,639  INFO com.yidian.wordvec2docvec.data.DocsPool:70 - load doc file:../data/doc_2018_04.txt
+2018-05-06 11:50:23,855  INFO com.yidian.wordvec2docvec.data.DocsPool:72 - doc file loaded.
+2018-05-06 11:50:23,856  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:50:23,857  INFO com.yidian.wordvec2docvec.data.DocsPool:75 - docVec file loaded.
+2018-05-06 11:50:23,860  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 11:50:23,860  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 11:50:23,861  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 11:50:23,861  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 11:50:23,862  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 11:50:24,150  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 11:50:25,357  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 11:50:25,462  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 11:50:25,565  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 11:50:25,666  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 11:50:25,843  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 11:50:25,942  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 11:50:26,038  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 11:50:26,150  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 11:50:26,375  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 11:50:26,484  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 11:50:26,587  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 11:50:26,699  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 11:50:26,864  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 11:50:27,622  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 11:50:27,777  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 11:50:27,891  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 11:50:28,033  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 11:50:28,174  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 11:50:28,470  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 11:50:28,572  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 11:50:28,674  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 11:50:28,797  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 11:50:28,913  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 11:50:29,182  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 11:50:29,326  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 11:50:29,428  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 11:50:30,008  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 11:50:30,109  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 11:50:30,214  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 11:50:30,336  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 11:50:30,534  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 11:50:30,635  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 11:50:30,805  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 11:50:30,909  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 11:50:31,013  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 11:50:31,249  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 11:50:31,366  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 11:50:31,471  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 11:50:32,475  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 11:50:32,576  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 11:50:32,679  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 11:50:32,937  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 11:50:33,049  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 11:50:33,150  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 11:50:33,334  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 11:50:33,447  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 11:50:34,052  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 11:50:34,200  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 11:50:34,371  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 11:50:34,615  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 11:50:34,727  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 11:50:34,893  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 11:50:35,040  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 11:50:35,066  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.
+2018-05-06 11:50:42,670  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:50:44,248  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:50:44,248  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:50:44,248  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:50:44,603  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:50:44,603  INFO com.yidian.wordvec2docvec.data.DocsPool:70 - load doc file:../data/doc_2018_04.txt
+2018-05-06 11:50:44,867  INFO com.yidian.wordvec2docvec.data.DocsPool:72 - doc file loaded.
+2018-05-06 11:50:44,867  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:52:24,679  INFO com.yidian.wordvec2docvec.data.DocsPool:64 - load word frequency file:../data/word_idf.txt
+2018-05-06 11:52:26,043  INFO com.yidian.wordvec2docvec.data.DocsPool:66 - word frequency file loaded.
+2018-05-06 11:52:26,044  INFO com.yidian.wordvec2docvec.data.DocsPool:67 - load word frequency file:../data/lda.dict.filter.v2
+2018-05-06 11:52:26,047  INFO com.yidian.wordvec2docvec.data.DocsPool:158 - load Dict...
+2018-05-06 11:52:26,394  INFO com.yidian.wordvec2docvec.data.DocsPool:69 - word frequency file loaded.
+2018-05-06 11:52:26,394  INFO com.yidian.wordvec2docvec.data.DocsPool:70 - load doc file:../data/doc_2018_04.txt
+2018-05-06 11:52:27,471  INFO com.yidian.wordvec2docvec.data.DocsPool:72 - doc file loaded.
+2018-05-06 11:52:27,471  INFO com.yidian.wordvec2docvec.data.DocsPool:73 - load docVec file:../data/docsVec.txt
+2018-05-06 11:52:27,602  INFO com.yidian.wordvec2docvec.data.DocsPool:75 - docVec file loaded.
+2018-05-06 11:52:27,609  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:67 - load word vec:../data/word.vec
+2018-05-06 11:52:27,609  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:93 - load vec from ../data/word.vec
+2018-05-06 11:52:27,610  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:98 - num:541889
+2018-05-06 11:52:27,610  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - size:300
+2018-05-06 11:52:27,611  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 0:</s>
+2018-05-06 11:52:27,861  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 10000:点心
+2018-05-06 11:52:28,125  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 20000:挑食
+2018-05-06 11:52:28,252  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 30000:控球
+2018-05-06 11:52:28,371  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 40000:圆角
+2018-05-06 11:52:28,563  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 50000:断桥
+2018-05-06 11:52:28,683  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 60000:出球
+2018-05-06 11:52:28,803  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 70000:context
+2018-05-06 11:52:29,653  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 80000:远志
+2018-05-06 11:52:29,773  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 90000:层层加码
+2018-05-06 11:52:29,891  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 100000:课间休息
+2018-05-06 11:52:30,015  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 110000:李立国
+2018-05-06 11:52:30,219  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 120000:景陵
+2018-05-06 11:52:30,338  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 130000:国培
+2018-05-06 11:52:30,452  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 140000:马齿菜
+2018-05-06 11:52:30,572  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 150000:展平
+2018-05-06 11:52:30,754  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 160000:百事哀
+2018-05-06 11:52:30,866  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 170000:汪清
+2018-05-06 11:52:30,980  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 180000:一枪打
+2018-05-06 11:52:31,093  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 190000:翻印
+2018-05-06 11:52:31,845  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 200000:觅知音
+2018-05-06 11:52:32,032  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 210000:circu
+2018-05-06 11:52:32,172  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 220000:喵姐
+2018-05-06 11:52:32,284  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 230000:穆公
+2018-05-06 11:52:32,507  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 240000:patta
+2018-05-06 11:52:32,612  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 250000:文定
+2018-05-06 11:52:32,717  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 260000:三艺
+2018-05-06 11:52:32,822  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 270000:魔蝎座
+2018-05-06 11:52:32,937  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 280000:红橘
+2018-05-06 11:52:33,223  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 290000:潜艇战
+2018-05-06 11:52:33,328  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 300000:斯坦德
+2018-05-06 11:52:33,443  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 310000:kj\ddl
+2018-05-06 11:52:33,556  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 320000:灞柳
+2018-05-06 11:52:33,896  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 330000:李洱
+2018-05-06 11:52:34,014  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 340000:伏龙山
+2018-05-06 11:52:34,132  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 350000:电瓶线
+2018-05-06 11:52:34,251  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 360000:磁碟
+2018-05-06 11:52:34,560  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 370000:贤良方正
+2018-05-06 11:52:34,677  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 380000:阿猛
+2018-05-06 11:52:34,784  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 390000:pme
+2018-05-06 11:52:35,411  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 400000:张黄
+2018-05-06 11:52:35,518  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 410000:泰安地区
+2018-05-06 11:52:35,628  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 420000:ffd
+2018-05-06 11:52:35,922  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 430000:通灵之术
+2018-05-06 11:52:36,030  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 440000:小泰山
+2018-05-06 11:52:36,177  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 450000:自然之味
+2018-05-06 11:52:36,285  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 460000:尤根
+2018-05-06 11:52:36,403  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 470000:róu
+2018-05-06 11:52:36,542  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 480000:布拉斯科
+2018-05-06 11:52:36,647  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 490000:contentlength
+2018-05-06 11:52:36,752  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 500000:关庙村
+2018-05-06 11:52:36,925  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 510000:roubini
+2018-05-06 11:52:37,031  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 520000:险酿
+2018-05-06 11:52:37,139  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 530000:bih
+2018-05-06 11:52:37,309  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:113 - load line 540000:经销价
+2018-05-06 11:52:37,331  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - word vec loaded.

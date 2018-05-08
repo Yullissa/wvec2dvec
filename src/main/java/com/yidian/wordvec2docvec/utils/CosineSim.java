@@ -1,11 +1,11 @@
-package com.yidian.wordvec2docvec.core;
+package com.yidian.wordvec2docvec.utils;
 
 /**
  * Created by admin on 2018/5/5.
  */
 public class CosineSim {
 
-    private float dot(float[] a, float[] b) {
+    public float dot(float[] a, float[] b) {
         float sum = 0.0f;
         for (int i = 0; i < a.length; i++) {
             sum += a[i] * b[i];
@@ -13,7 +13,7 @@ public class CosineSim {
         return sum;
     }
 
-    private float norm(float[] a) {
+    public float norm(float[] a) {
         float sum = 0.0f;
         for (int i = 0; i < a.length; i++) {
             sum += a[i] * a[i];
