@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.extern.log4j.Log4j;
 
 import java.io.*;
+import java.nio.ByteBuffer;
+import java.time.LocalTime;
 import java.util.*;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -16,7 +18,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 @Log4j
 @Data
 public class DocsPool {
-    protected volatile Map<String, String[]> documentInfoMap = Maps.newConcurrentMap();
+    protected volatile Map<String, String> documentInfoMap = Maps.newConcurrentMap();
     protected volatile Map<String, float[]> docVecInfoMap = Maps.newConcurrentMap();
     protected volatile Map<String, Integer> wordFreMap = Maps.newConcurrentMap();
     protected volatile HashSet<String> wordSet = new HashSet();
@@ -67,16 +69,16 @@ public class DocsPool {
             String data;
             int i = 0;
             while ((data = br.readLine()) != null) {
-                if (data.split("\t").length == 3) {
+                try {
                     i++;
-                    String docid = data.split("\t")[1];
-                    String docWords = data.split("\t")[2];
-                    String[] docWordsList = docWords.split("\\s+");
-                    documentInfoMap.put(docid, docWordsList);
+                    String[] data1 = data.split("\t");
+                    documentInfoMap.put(data1[1], data1[2]);
                     //14858382
                     if (i % 100000 == 0) {
-                        log.info("load prim data : line " + i + ":" + docid);
+                        log.info("load prim data : line " + i + ":" + data1[1]);
                     }
+                } catch (Exception e) {
+                    log.error(e);
                 }
             }
             br.close();
@@ -90,36 +92,42 @@ public class DocsPool {
 
     public boolean loadDocsVecFromFile(String fname) {
         try {
-            docVecInfoMap.clear();
+//            docVecInfoMap.clear();
             FileInputStream fis = new FileInputStream(fname);
             DataInputStream dis = new DataInputStream(fis);
             int i = 0;
             byte docidTemp = '0';
             byte[] docid = new byte[15];
             String docId = null;
+            byte[] vecFloatTemp = new byte[1500];
+            byte[] vecCur = new byte[4];
             while (dis.available() > 0) {
                 float[] docVec = new float[300];
                 for (int j = 0; j < 15; j++) {
                     if (docidTemp == '\t') {
                         docidTemp = '0';
                         docId = new String(docid, "UTF-8").substring(0, j - 1);
-//                        System.out.println(docId.substring(0, j - 2));
                         break;
                     } else {
                         docidTemp = dis.readByte();
                         docid[j] = docidTemp;
                     }
                 }
+
+
+                dis.read(vecFloatTemp, 0, 1500);
+
                 for (int k = 0; k < 300; k++) {
-                    float f1 = dis.readFloat();
-                    docVec[k] = f1;
-                    dis.skipBytes(1);
+                    for(int j=0;j<4;j++){
+                        vecCur[j] = vecFloatTemp[k*5+j];
+                    }
+                    docVec[k] = ByteBuffer.wrap(vecCur).getFloat();
                 }
                 docVecInfoMap.put(docId, docVec);
                 dis.skipBytes(1);
                 i++;
-                if (i % 100000 == 0) {
-                    log.info("load doc vec data : line " + i + ":" + docid);
+                if (i % 500000 == 0) {
+                    log.info("load doc vec data : line " + i + ":" + docId);
                 }
             }
             dis.close();
@@ -127,6 +135,7 @@ public class DocsPool {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        LocalTime dout = LocalTime.now();
         return true;
     }
 
@@ -139,9 +148,7 @@ public class DocsPool {
             String data;
             while ((data = br.readLine()) != null) {
                 if (data.split("\t").length == 2) {
-                    String word = data.split("\t")[0];
-                    String wordFrequence = data.split("\t")[1];
-                    wordFreMap.put(word, Integer.parseInt(wordFrequence));
+                    wordFreMap.put(data.split("\t")[0], Integer.parseInt(data.split("\t")[1]));
                 }
             }
             br.close();
@@ -188,7 +195,7 @@ public class DocsPool {
     }
 
 
-    public String[] getPoolWordsByDocid(String docid) {
+    public String getPoolWordsByDocid(String docid) {
         return documentInfoMap.get(docid);
     }
 
