@@ -30,18 +30,13 @@ import com.yidian.wordvec2docvec.utils.CosineSim;
 @Data
 public class WordVec2DocVec {
     private static volatile WordVec2DocVec instance = null;
-    //TODO
-//    private static volatile DocsVecCal dovc = DocsVecCal.defaultInstance(14858382, 302.3f);
     private static volatile DocsPool pool = DocsPool.defaultInstance();
     private static volatile DocEmbedding docEmb = DocEmbedding.defaultInstance("getRecommend");
-    //    private static volatile NewsDocumentCache nd = NewsDocumentCache.defaultInstance();
-    private static ObjectMapper mapper = new ObjectMapper();
     private Pattern patIneerPun = Pattern.compile("[`~!@#$^&*()=|{}':;',\\\\[\\\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]");
     private Pattern patNum = Pattern.compile("([0-9]\\d*\\.?\\d*)|(0\\.\\d*[1-9])");
     private String posString = "DEC DEV AD DEG DT PU P LC DER VC ETC AS SP IJ MSP CC BA LB UH";
     private String[] myArray = posString.split(" ");
     private HashSet posSet = new HashSet();
-
 
     public static WordVec2DocVec getInstance() {
         if (instance == null) {
@@ -60,7 +55,6 @@ public class WordVec2DocVec {
         }
     }
 
-
     Comparator<Pair<String, Double>> OrderIsdn = new Comparator<Pair<String, Double>>() {
         public int compare(Pair<String, Double> o1, Pair<String, Double> o2) {
             // TODO Auto-generated method stub
@@ -77,9 +71,7 @@ public class WordVec2DocVec {
     };
 
     private List<String> getWordsByDocid(String docid) {
-//        System.out.println("http://cl-k8s.ha.in.yidian.com/apis/docenter/yidian/ids/" + docid + "/fields/url,pos_title,seg_title,pos_content,source,signature,_id,kws,sc_kws'");
         Optional<String> retOpt = HttpUtils.get("http://cl-k8s.ha.in.yidian.com/apis/docenter/yidian/ids/" + docid + "/fields/url,pos_title,seg_title,pos_content,source,signature,_id,kws,sc_kws'", 300, 3, 5);
-//        System.out.println(retOpt);
         JSONObject jsonObj = new JSONObject(retOpt.get().toString());
         try {
             if (jsonObj.has("result")) {
@@ -127,7 +119,6 @@ public class WordVec2DocVec {
                 if (matcherNum.find()) {
                     wordStr = matcherNum.replaceAll("\\\\d");
                 }
-
                 if (wordStr.length() == 0 || posStr.length() == 0) {
                     continue;
                 }
@@ -141,8 +132,6 @@ public class WordVec2DocVec {
     }
 
     public List<Map<String, String>> recommend(String docid, int DocNum, float avgle) {
-        log.warn("Use DocNum = " + DocNum);
-        log.warn("Use avgle = " + avgle);
         BM25 bm = new BM25();
         CosineSim csim = new CosineSim();
 
@@ -152,7 +141,6 @@ public class WordVec2DocVec {
         HashMap<String, Float> docWordWeiMap = new HashMap();
         float[] docidVec = new float[300];
         log.info("get doid's words start");
-        System.out.println(docid);
         List<String> wordsList = getWordsByDocid(docid);
         log.info("get doid's words end");
 
@@ -163,6 +151,8 @@ public class WordVec2DocVec {
         } else {
             log.info("in cal vec " + LocalTime.now());
             float[] vec = new float[300];
+            float[] docidVecTemp = new float[300];
+
             for (String word : wordsList) {
                 vec = docEmb.getContextVec(word);
                 if (vec == null) {
@@ -177,7 +167,6 @@ public class WordVec2DocVec {
                 float wordWei = bm.getBM25((float) DocNum, pool.getWordFreq(word), (float) docWordCountMap.get(word), wordsList.size(), avgle);
                 docWordWeiMap.put(word, wordWei);
             }
-            float[] docidVecTemp = new float[300];
             for (String words : wordsList) {
                 if (docWordVecMap.containsKey(words)) {
                     for (int j = 0; j < 300; j++) {
@@ -198,7 +187,7 @@ public class WordVec2DocVec {
 
         log.info("start sort by sim value" + LocalTime.now());
         Queue<Pair<String, Double>> priorityQueue = new PriorityQueue<>(100, OrderIsdn);
-        
+
         for (Pair<String, Double> re : ret) {
             if (re.getRight() < 1 && re.getRight() > -1) {
                 if (priorityQueue.size() < 100) {
@@ -219,10 +208,9 @@ public class WordVec2DocVec {
             recDocs.add(pq.getKey());
             System.out.println(pq.getRight());
         }
-
         log.info("end sort by sim value" + LocalTime.now());
-
         recDocs.add(docid);
+
         log.info("start get docs from newsDocumentMap" + LocalTime.now());
         Map<String, NewsDocument> newsDocumentMap = NewsDocumentCache.defaultInstance().getAll(recDocs);
         log.info("end get docs from newsDocumentMap" + LocalTime.now());
@@ -240,11 +228,10 @@ public class WordVec2DocVec {
         while (lit.hasNext()) {
              lit.next();
         }
-
         while (lit.hasPrevious()) {
             Pair<String, Double> litCur = lit.previous();
-            String docCur = litCur.getKey();
             Map<String, String> tmp = new HashMap<>();
+            String docCur = litCur.getKey();
             tmp.put("docid", docCur);
             tmp.put("simScore", litCur.getRight().toString());
             if (!newsDocumentMap.get(docCur).equals(Optional.empty())) {
@@ -255,7 +242,6 @@ public class WordVec2DocVec {
         log.info("out find words " + LocalTime.now());
         return recommendForDocid;
     }
-
 
     public static void main(String[] args) {
         File logConfig = new File("log4j.properties");

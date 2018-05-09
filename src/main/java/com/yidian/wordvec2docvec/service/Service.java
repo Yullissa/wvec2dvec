@@ -57,12 +57,6 @@ public class Service implements Runnable {
         }
         log.info("before init Service");
         initService();
-//        DocumentFilter filter = FastTextFilter.getInstance();
-//        DocumentCollect newsCollect = new DocumentCollect("indata_str_documents_info", filter);
-//        DocumentCollect vertCollectt = new DocumentCollect("indata_str_vertical_documents", filter);
-//        newsCollect.start();
-//        vertCollectt.start();
-//        scheduledPool.scheduleAtFixedRate(() -> FidSet2news.getInstance().explire(), 0, 3, TimeUnit.MINUTES);
         QueuedThreadPool threadPool = new QueuedThreadPool();
         threadPool.setMinThreads(threadPool.getMinThreads() * 4);
         threadPool.setMaxThreads(threadPool.getMaxThreads() * 4);
@@ -116,19 +110,7 @@ public class Service implements Runnable {
         // priDocFile  docVecsFile
         log.info(task);
         if (task.equals("trainDocVecs")) {
-            log.info("docVecsFile");
-//            File decvec = new File(docVecsFile);
-//            if (decvec.exists()) {
-//                try{
-//                    FileWriter fileWriter =new FileWriter(decvec);
-//                    fileWriter.write("");
-//                    fileWriter.flush();
-//                    fileWriter.close();
-//                }catch (Exception e){
-//                    log.error(e);
-//                }
             DocsVecCal.defaultInstance(priDocFile, docVecsFile, docNum, avgle);
-//            }
         } else {
             log.info("begin docembedding");
             DocEmbedding.defaultInstance(task);
@@ -136,6 +118,7 @@ public class Service implements Runnable {
             log.info("begin docspool");
             DocsPool.defaultInstance();
             log.info("end docspool");
+            //initial NewsDocumentCache by a random id
             NewsDocumentCache.defaultInstance().get("0IzyShbN");
         }
     }
