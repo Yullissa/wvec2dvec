@@ -6,6 +6,7 @@ import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.yidian.wordvec2docvec.data.DocsPool;
 import com.yidian.wordvec2docvec.data.DocsVecCal;
 import com.yidian.wordvec2docvec.utils.DocEmbedding;
+import com.yidian.wordvec2docvec.utils.NewsDocumentCache;
 import lombok.extern.log4j.Log4j;
 import org.apache.log4j.PropertyConfigurator;
 import org.eclipse.jetty.server.Connector;
@@ -126,15 +127,16 @@ public class Service implements Runnable {
 //                }catch (Exception e){
 //                    log.error(e);
 //                }
-            DocsVecCal.defaultInstance(task, priDocFile, docVecsFile, docNum, avgle);
+            DocsVecCal.defaultInstance(priDocFile, docVecsFile, docNum, avgle);
 //            }
         } else {
             log.info("begin docembedding");
-            DocEmbedding.defaultInstance();
+            DocEmbedding.defaultInstance(task);
             log.info("end docembedding");
             log.info("begin docspool");
-            DocsPool.defaultInstance(task);
+            DocsPool.defaultInstance();
             log.info("end docspool");
+            NewsDocumentCache.defaultInstance().get("0IzyShbN");
         }
     }
 

@@ -6,7 +6,10 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.hipu.news.dynamic.NewsDocument;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import com.yidian.wordvec2docvec.utils.*;
+import org.apache.commons.lang3.tuple.Pair;
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.commons.lang.StringUtils;
 import org.jsoup.Jsoup;
@@ -29,8 +32,9 @@ public class WordVec2DocVec {
     private static volatile WordVec2DocVec instance = null;
     //TODO
 //    private static volatile DocsVecCal dovc = DocsVecCal.defaultInstance(14858382, 302.3f);
-    private static volatile DocsPool pool = DocsPool.defaultInstance("getRecommend");
-    private static volatile DocEmbedding docEmb = DocEmbedding.defaultInstance();
+    private static volatile DocsPool pool = DocsPool.defaultInstance();
+    private static volatile DocEmbedding docEmb = DocEmbedding.defaultInstance("getRecommend");
+    //    private static volatile NewsDocumentCache nd = NewsDocumentCache.defaultInstance();
     private static ObjectMapper mapper = new ObjectMapper();
     private Pattern patIneerPun = Pattern.compile("[`~!@#$^&*()=|{}':;',\\\\[\\\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]");
     private Pattern patNum = Pattern.compile("([0-9]\\d*\\.?\\d*)|(0\\.\\d*[1-9])");
@@ -57,22 +61,20 @@ public class WordVec2DocVec {
     }
 
 
-    private static Map<String, Float> sortByValue(Map<String, Float> unsortMap) {
-        List<Map.Entry<String, Float>> list =
-                new LinkedList<Map.Entry<String, Float>>(unsortMap.entrySet());
-        Collections.sort(list, new Comparator<Map.Entry<String, Float>>() {
-            public int compare(Map.Entry<String, Float> o1,
-                               Map.Entry<String, Float> o2) {
-                return (o2.getValue()).compareTo(o1.getValue());
+    Comparator<Pair<String, Double>> OrderIsdn = new Comparator<Pair<String, Double>>() {
+        public int compare(Pair<String, Double> o1, Pair<String, Double> o2) {
+            // TODO Auto-generated method stub
+            double numbera = o1.getRight();
+            double numberb = o2.getRight();
+            if (numberb < numbera) {
+                return 1;
+            } else if (numberb > numbera) {
+                return -1;
+            } else {
+                return 0;
             }
-        });
-//        Map<String, Float> sortedMap = new LinkedHashMap<String, Float>();
-        HashMap<String, Float> sortedMap = new LinkedHashMap<>();
-        for (Map.Entry<String, Float> entry : list) {
-            sortedMap.put(entry.getKey(), entry.getValue());
         }
-        return sortedMap;
-    }
+    };
 
     private List<String> getWordsByDocid(String docid) {
 //        System.out.println("http://cl-k8s.ha.in.yidian.com/apis/docenter/yidian/ids/" + docid + "/fields/url,pos_title,seg_title,pos_content,source,signature,_id,kws,sc_kws'");
@@ -154,15 +156,13 @@ public class WordVec2DocVec {
         List<String> wordsList = getWordsByDocid(docid);
         log.info("get doid's words end");
 
-        if (pool.getDocVecsDocids().contains(docid)) {
+        if (docEmb.getTargetKey().contains(docid)) {
             log.info("in find  vec " + LocalTime.now());
-            docidVec = pool.getDocVecByDocid(docid);
+            docidVec = docEmb.getTargetVec(docid);
             log.info("out find  vec " + LocalTime.now());
-
         } else {
             log.info("in cal vec " + LocalTime.now());
             float[] vec = new float[300];
-
             for (String word : wordsList) {
                 vec = docEmb.getContextVec(word);
                 if (vec == null) {
@@ -173,23 +173,11 @@ public class WordVec2DocVec {
                     docWordCountMap.put(word, 1);
                 }
             }
-
-            Iterator iter = docWordVecMap.entrySet().iterator();
-            Map.Entry entry;
-            String word;
-            while (iter.hasNext()) {
-                entry = (Map.Entry) iter.next();
-                // 获取key
-                word = (String) entry.getKey();
-                float wordWei = (float) bm.getBM25((float) DocNum, pool.getWordFreq(word), (float) docWordCountMap.get(word), wordsList.size(), avgle);
-                docWordWeiMap.put((String) entry.getKey(), wordWei);
+            for (String word : docWordCountMap.keySet()) {
+                float wordWei = bm.getBM25((float) DocNum, pool.getWordFreq(word), (float) docWordCountMap.get(word), wordsList.size(), avgle);
+                docWordWeiMap.put(word, wordWei);
             }
-
             float[] docidVecTemp = new float[300];
-            for (int k = 0; k < 300; k++) {
-                docidVecTemp[k] = 0;
-            }
-
             for (String words : wordsList) {
                 if (docWordVecMap.containsKey(words)) {
                     for (int j = 0; j < 300; j++) {
@@ -197,93 +185,74 @@ public class WordVec2DocVec {
                     }
                 }
             }
-
+            float docidNorm = csim.norm(docidVecTemp);
             for (int j = 0; j < 300; j++) {
-                docidVec[j] = docidVecTemp[j] / csim.norm(docidVecTemp);
+                docidVec[j] = docidVecTemp[j] / docidNorm;
             }
             log.info("out cal vec " + LocalTime.now());
         }
 
-
         log.info("in cal sim  " + LocalTime.now());
+        List<Pair<String, Double>> ret = docEmb.calcContextTargetCross(docidVec);
+        log.info("out cal sim " + LocalTime.now());
 
-        float[] tempDocVecFloat = new float[300];
-        float sim = 0.0f;
-        float[] docSim = new float[100];
-        for (int k = 0; k < 100; k++) {
-            docSim[k] = -1;
-        }
-        String[] recVec = new String[100];
-        for (String doc : pool.getDocVecsDocids()) {
-            if (!doc.equals(docid)) {
-                tempDocVecFloat = pool.getDocVecByDocid(doc);
-                sim = csim.dot(docidVec, tempDocVecFloat);
-                if (!Double.isNaN(sim) && sim <= 1 && sim >= -1 && sim > docSim[99]) {
-                    int j = 99;
-                    while (j >= 0 && sim > docSim[j]) {
-                        j--;
-                    }
-                    j = j + 1;
-                    for (int i = 98; i >= j; i--) {
-                        docSim[i + 1] = docSim[i];
-                        recVec[i + 1] = recVec[i];
-                    }
-                    docSim[j] = sim;
-                    recVec[j] = doc;
+        log.info("start sort by sim value" + LocalTime.now());
+        Queue<Pair<String, Double>> priorityQueue = new PriorityQueue<>(100, OrderIsdn);
+        
+        for (Pair<String, Double> re : ret) {
+            if (re.getRight() < 1 && re.getRight() > -1) {
+                if (priorityQueue.size() < 100) {
+                    priorityQueue.add(re);
+                } else if (priorityQueue.peek().getRight() < re.getRight()) {
+                    priorityQueue.poll();
+                    priorityQueue.add(re);
                 }
             }
         }
 
-        for (int l = 0; l < 100; l++) {
-            System.out.println(recVec[l]);
-            System.out.println(docSim[l]);
+        Set<String> recDocs = new HashSet<>(101);
+        List<Pair<String, Double>> recList = Lists.newArrayList();
+
+        for (int k = 0; k < 100; k++) {
+            Pair<String, Double> pq = priorityQueue.poll();
+            recList.add(pq);
+            recDocs.add(pq.getKey());
+            System.out.println(pq.getRight());
         }
 
-        log.info("out cal sim " + LocalTime.now());
+        log.info("end sort by sim value" + LocalTime.now());
 
-        log.info("recdocs have been selected" + LocalTime.now());
-//        Map<String, Float> sortedSimMap = sortByValue(recommendSim);
-        log.info("sorted by sim value" + LocalTime.now());
+        recDocs.add(docid);
+        log.info("start get docs from newsDocumentMap" + LocalTime.now());
+        Map<String, NewsDocument> newsDocumentMap = NewsDocumentCache.defaultInstance().getAll(recDocs);
+        log.info("end get docs from newsDocumentMap" + LocalTime.now());
+
         Map<String, String> temp = new HashMap<>();
         temp.put("docid", docid);
         temp.put("selfScore", docid);
-        temp.put("words", StringUtils.join(wordsList, " "));
-        try {
-            Document docText = Jsoup.connect("https://www.yidianzixun.com/article/" + docid).get();
-            temp.put("doctitle", docText.title());
-            System.out.println(docText.title());
-            System.out.println(StringUtils.join(wordsList, " "));
-
-        } catch (IOException e) {
-            e.printStackTrace();
-            log.error(e);
+        if (!newsDocumentMap.get(docid).equals(Optional.empty())) {
+            temp.put("doctitle", newsDocumentMap.get(docid).getTitle());
         }
         recommendForDocid.add(temp);
 
         log.info("in find words " + LocalTime.now());
+        ListIterator<Pair<String, Double>> lit = recList.listIterator();
+        while (lit.hasNext()) {
+             lit.next();
+        }
 
-        for (int k = 0; k < 100; k++) {
-            String docRec = recVec[k];
-
+        while (lit.hasPrevious()) {
+            Pair<String, Double> litCur = lit.previous();
+            String docCur = litCur.getKey();
             Map<String, String> tmp = new HashMap<>();
-
-            tmp.put("docid", docRec);
-            tmp.put("score", String.valueOf(docSim[k]));
-            tmp.put("words", StringUtils.join(getWordsByDocid(docRec), " "));
-            try {
-                Document docText = Jsoup.connect("https://www.yidianzixun.com/article/" + docRec).get();
-                tmp.put("doctitle", docText.title());
-                System.out.println(docText.title());
-                //                System.out.println(String.valueOf(sortedSimMap.get(docRec)));
-                System.out.println(StringUtils.join(getWordsByDocid(docRec), " "));
-            } catch (IOException e) {
-                log.error(e);
+            tmp.put("docid", docCur);
+            tmp.put("simScore", litCur.getRight().toString());
+            if (!newsDocumentMap.get(docCur).equals(Optional.empty())) {
+                tmp.put("docTile", newsDocumentMap.get(docCur).getTitle());
             }
             recommendForDocid.add(tmp);
         }
         log.info("out find words " + LocalTime.now());
-
-
         return recommendForDocid;
     }
 
