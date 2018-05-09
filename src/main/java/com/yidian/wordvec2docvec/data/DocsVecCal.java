@@ -65,9 +65,10 @@ public class DocsVecCal {
             float[] docidVec = new float[300];
 
             CosineSim csim = new CosineSim();
-            LocalTime din = LocalTime.now();
-            System.out.println("inthis " + din);
+
             for (String docid : pool.getPoolAllDocids()) {
+                LocalTime din = LocalTime.now();
+                System.out.println("inthis " + din);
                 wordsList = pool.getPoolWordsByDocid(docid).split(" ");
                 docWordVecMap.clear();
                 docWordCountMap.clear();
@@ -120,10 +121,10 @@ public class DocsVecCal {
                     log.info("gain doc vec data : line " + i + ":" + docid);
                     dos.flush();
                 }
-            }
-            LocalTime dout = LocalTime.now();
+                LocalTime dout = LocalTime.now();
 //                System.out.println((dout - din));
-            System.out.println("outthis " + dout);
+                System.out.println("outthis " + dout);
+            }
         } catch (Exception e) {
             log.error(e);
         }

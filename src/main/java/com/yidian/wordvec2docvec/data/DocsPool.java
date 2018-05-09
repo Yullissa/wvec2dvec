@@ -37,10 +37,10 @@ public class DocsPool {
     }
 
     public DocsPool(String task) {
-        init(task, "../data/word_idf.txt", "../data/lda.dict.filter.v2", "../data/docsVec.txt");
+        init(task,"../data/word_idf.txt", "../data/lda.dict.filter.v2", "../data/docsVec.txt");
     }
 
-    private void init(String task, String wordFreq, String wordDict, String docVecFile) {
+    private void init(String task ,String wordFreq, String wordDict, String docVecFile) {
         try {
             log.info("load word frequency file:" + wordFreq);
             loadIdfFromFile(wordFreq);
@@ -54,6 +54,9 @@ public class DocsPool {
                 loadDocsVecFromFile(docVecFile);
                 log.info("docVec file loaded.");
             }
+
+            log.info("in DocsPool init" + task);
+
         } catch (Exception e) {
             log.error(e);
             System.exit(-1);

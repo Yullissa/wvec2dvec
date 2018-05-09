@@ -1,0 +1,1426 @@
+2018-05-08 10:40:09,852  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 10:40:09,866  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 10:40:09,867  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 10:40:09,877  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 10:40:17,878  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 10:40:17,919  INFO com.yidian.wordvec2docvec.data.DocsPool:42 - load word frequency file:../data/word_idf.txt
+2018-05-08 10:40:18,870  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - word frequency file loaded.
+2018-05-08 10:40:18,870  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 10:40:18,870  INFO com.yidian.wordvec2docvec.data.DocsPool:146 - load Dict...
+2018-05-08 10:40:19,059  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word dict file loaded.
+2018-05-08 10:45:53,800  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 10:45:53,808  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 10:45:53,809  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 10:45:53,813  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 10:46:02,554  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 10:46:02,574  INFO com.yidian.wordvec2docvec.data.DocsPool:42 - load word frequency file:../data/word_idf.txt
+2018-05-08 10:46:03,609  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - word frequency file loaded.
+2018-05-08 10:46:03,609  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 10:46:03,609  INFO com.yidian.wordvec2docvec.data.DocsPool:146 - load Dict...
+2018-05-08 10:46:03,801  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word dict file loaded.
+2018-05-08 10:49:37,773  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 10:49:37,777  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 10:49:37,778  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 10:49:37,787  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 10:49:47,485  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 10:49:47,522  INFO com.yidian.wordvec2docvec.data.DocsPool:42 - load word frequency file:../data/word_idf.txt
+2018-05-08 10:49:48,899  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - word frequency file loaded.
+2018-05-08 10:49:48,899  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 10:49:48,899  INFO com.yidian.wordvec2docvec.data.DocsPool:146 - load Dict...
+2018-05-08 10:49:49,095  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word dict file loaded.
+2018-05-08 11:05:11,512  INFO com.yidian.wordvec2docvec.data.DocsPool:42 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:05:13,842  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - word frequency file loaded.
+2018-05-08 11:05:13,842  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:05:13,842  INFO com.yidian.wordvec2docvec.data.DocsPool:147 - load Dict...
+2018-05-08 11:05:14,403  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word dict file loaded.
+2018-05-08 11:05:14,403  INFO com.yidian.wordvec2docvec.data.DocsPool:49 - in DocsPool initgetRecommend
+2018-05-08 11:05:14,406  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - load docVec file:../data/docsVec.txt
+2018-05-08 11:05:50,464 ERROR com.yidian.wordvec2docvec.data.DocsPool:55 - java.lang.NullPointerException
+2018-05-08 11:08:17,139  INFO com.yidian.wordvec2docvec.data.DocsPool:42 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:08:18,280  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - word frequency file loaded.
+2018-05-08 11:08:18,280  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:08:18,280  INFO com.yidian.wordvec2docvec.data.DocsPool:151 - load Dict...
+2018-05-08 11:08:18,666  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word dict file loaded.
+2018-05-08 11:08:18,667  INFO com.yidian.wordvec2docvec.data.DocsPool:49 - in DocsPool initgetRecommend
+2018-05-08 11:08:18,670  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - load docVec file:../data/docsVec.txt
+2018-05-08 11:08:21,642 ERROR com.yidian.wordvec2docvec.data.DocsPool:55 - java.lang.NullPointerException
+2018-05-08 11:09:10,332  INFO com.yidian.wordvec2docvec.data.DocsPool:42 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:09:11,589  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - word frequency file loaded.
+2018-05-08 11:09:11,589  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:09:11,589  INFO com.yidian.wordvec2docvec.data.DocsPool:151 - load Dict...
+2018-05-08 11:09:11,935  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word dict file loaded.
+2018-05-08 11:09:11,936  INFO com.yidian.wordvec2docvec.data.DocsPool:49 - in DocsPool initgetRecommend
+2018-05-08 11:09:11,938  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - load docVec file:../data/docsVec.txt
+2018-05-08 11:09:17,070 ERROR com.yidian.wordvec2docvec.data.DocsPool:55 - java.lang.NullPointerException
+2018-05-08 11:11:12,485  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:11:13,825  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:11:13,825  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:11:13,825  INFO com.yidian.wordvec2docvec.data.DocsPool:152 - load Dict...
+2018-05-08 11:11:14,204  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:11:14,205  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:11:14,208  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:11:22,291  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 11:15:01,842  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:15:03,209  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:15:03,209  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:15:03,209  INFO com.yidian.wordvec2docvec.data.DocsPool:153 - load Dict...
+2018-05-08 11:15:03,597  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:15:03,597  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:15:03,600  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:15:06,947 ERROR com.yidian.wordvec2docvec.data.DocsPool:56 - java.lang.NullPointerException
+2018-05-08 11:16:41,737  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:16:42,939  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:16:42,939  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:16:42,939  INFO com.yidian.wordvec2docvec.data.DocsPool:153 - load Dict...
+2018-05-08 11:16:43,312  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:16:43,313  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:16:43,317  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:20:03,494  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:20:04,740  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:20:04,741  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:20:04,741  INFO com.yidian.wordvec2docvec.data.DocsPool:153 - load Dict...
+2018-05-08 11:20:05,220  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:20:05,221  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:20:05,224  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:21:48,062  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:21:49,959  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:21:49,959  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:21:49,959  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 11:21:50,437  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:21:50,437  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:21:50,442  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:22:16,658  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:22:18,322  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:22:18,325  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:22:18,325  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 11:22:18,685  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:22:18,685  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:22:18,689  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:27:13,733  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:27:15,131  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:27:15,131  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:27:15,131  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 11:27:15,448  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:27:15,448  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:27:15,450  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:30:49,563  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:30:51,421  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:30:51,421  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:30:51,421  INFO com.yidian.wordvec2docvec.data.DocsPool:157 - load Dict...
+2018-05-08 11:30:51,834  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:30:51,834  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:30:51,838  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:31:30,608  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:31:32,419  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:31:32,419  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:31:32,419  INFO com.yidian.wordvec2docvec.data.DocsPool:157 - load Dict...
+2018-05-08 11:31:32,827  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:31:32,827  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:31:32,831  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:32:08,015  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:32:09,800  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:32:09,800  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:32:09,800  INFO com.yidian.wordvec2docvec.data.DocsPool:157 - load Dict...
+2018-05-08 11:32:10,156  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:32:10,157  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:32:10,159  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:36:35,094  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:36:37,019  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:36:37,019  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:36:37,019  INFO com.yidian.wordvec2docvec.data.DocsPool:164 - load Dict...
+2018-05-08 11:36:37,452  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:36:37,452  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:36:37,456  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:42:50,624  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:42:52,528  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:42:52,529  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:42:52,529  INFO com.yidian.wordvec2docvec.data.DocsPool:167 - load Dict...
+2018-05-08 11:42:52,860  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:42:52,860  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:42:52,863  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:44:56,223  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:44:57,544  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:44:57,544  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:44:57,545  INFO com.yidian.wordvec2docvec.data.DocsPool:168 - load Dict...
+2018-05-08 11:44:57,882  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:44:57,882  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:44:57,885  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:48:35,106  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:48:37,141  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:48:37,141  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:48:37,141  INFO com.yidian.wordvec2docvec.data.DocsPool:169 - load Dict...
+2018-05-08 11:48:37,484  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:48:37,484  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:48:37,488  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:49:06,044  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:49:08,548  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:49:08,548  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:49:08,548  INFO com.yidian.wordvec2docvec.data.DocsPool:169 - load Dict...
+2018-05-08 11:49:08,850  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:49:08,850  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:49:08,858  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:49:26,158 ERROR com.yidian.wordvec2docvec.data.DocsPool:56 - java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+2018-05-08 11:50:57,079  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:50:59,053  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:50:59,053  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:50:59,053  INFO com.yidian.wordvec2docvec.data.DocsPool:167 - load Dict...
+2018-05-08 11:50:59,481  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:50:59,481  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:50:59,481  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:50:59,525 ERROR com.yidian.wordvec2docvec.data.DocsPool:56 - java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+2018-05-08 11:52:02,104  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:52:03,924  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:52:03,925  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:52:03,925  INFO com.yidian.wordvec2docvec.data.DocsPool:168 - load Dict...
+2018-05-08 11:52:04,186  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:52:04,186  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:52:04,189  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:52:07,832  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:52:13,300  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:52:13,305  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:52:13,308  INFO com.yidian.wordvec2docvec.data.DocsPool:168 - load Dict...
+2018-05-08 11:52:14,518  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:52:14,519  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:52:14,519  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:52:24,551  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 11:58:11,232  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 11:58:13,468  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 11:58:13,472  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 11:58:13,473  INFO com.yidian.wordvec2docvec.data.DocsPool:160 - load Dict...
+2018-05-08 11:58:13,851  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 11:58:13,854  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 11:58:13,867  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 11:58:17,740  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 11:58:17,747  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 11:58:17,748  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 11:58:17,748  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 11:58:17,748  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 11:58:28,936  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:04:39,373 ERROR com.yidian.wordvec2docvec.data.DocsPool:? - java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+2018-05-08 12:04:39,695 ERROR com.yidian.wordvec2docvec.data.DocsPool:? - java.lang.StringIndexOutOfBoundsException: String index out of range: -2
+2018-05-08 12:04:56,988  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:04:58,094  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:04:58,094  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:04:58,095  INFO com.yidian.wordvec2docvec.data.DocsPool:160 - load Dict...
+2018-05-08 12:04:58,631  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:04:58,631  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:04:58,632  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:05:02,128  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:05:02,130  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:05:02,130  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:05:02,130  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:05:02,131  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:05:10,830  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:07:59,462  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:08:00,592  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:08:00,593  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:08:00,593  INFO com.yidian.wordvec2docvec.data.DocsPool:160 - load Dict...
+2018-05-08 12:08:00,892  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:08:00,892  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:08:00,893  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:08:04,152  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:08:04,153  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:08:04,154  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:08:04,154  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:08:04,154  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:08:11,784  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:09:26,541  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:09:27,710  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:09:27,711  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:09:27,711  INFO com.yidian.wordvec2docvec.data.DocsPool:160 - load Dict...
+2018-05-08 12:09:28,150  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:09:28,150  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:09:28,151  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:09:31,211  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:09:31,213  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:09:31,213  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:09:31,213  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:09:31,213  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:09:38,154  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:11:59,497  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:12:00,844  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:12:00,844  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:12:00,844  INFO com.yidian.wordvec2docvec.data.DocsPool:160 - load Dict...
+2018-05-08 12:12:01,178  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:12:01,178  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:12:01,181  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:12:03,960  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:12:03,962  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:12:03,962  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:12:03,962  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:12:03,962  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:12:10,869  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:16:45,119  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:16:46,819  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:16:46,819  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:16:46,819  INFO com.yidian.wordvec2docvec.data.DocsPool:160 - load Dict...
+2018-05-08 12:16:47,437  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:16:47,437  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:16:47,440  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:16:50,473  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:16:50,477  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:16:50,478  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:16:50,479  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:16:50,480  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:16:57,810  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:19:01,929  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:19:03,692  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:19:03,693  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:19:03,693  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 12:19:04,063  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:19:04,064  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:19:04,068  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:20:04,204  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:20:05,623  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:20:05,623  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:20:05,623  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 12:20:06,014  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:20:06,014  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:20:06,017  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:21:42,381  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:21:43,588  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:21:43,594  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:21:43,594  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 12:21:43,892  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:21:43,892  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:21:43,892  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:21:48,252  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:21:48,254  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:21:48,254  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:21:48,254  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:21:48,254  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:21:54,402  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:22:19,937  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:22:21,436  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:22:21,438  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:22:21,439  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 12:22:21,734  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:22:21,734  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:22:21,737  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:27:06,274  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:27:07,666  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:27:07,666  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:27:07,666  INFO com.yidian.wordvec2docvec.data.DocsPool:164 - load Dict...
+2018-05-08 12:27:07,992  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:27:07,993  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:27:08,000  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:27:12,205  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:27:12,209  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:27:12,209  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:27:12,210  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:27:12,210  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:27:19,178  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 12:58:08,078  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:58:23,882  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:58:30,291  INFO com.yidian.wordvec2docvec.data.DocsPool:? - docVec file loaded.
+2018-05-08 12:58:30,309  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:58:30,310  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:58:30,311  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:58:30,311  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 12:58:58,179  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:59:12,833  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 12:59:37,056  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 12:59:37,056  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 12:59:37,056  INFO com.yidian.wordvec2docvec.data.DocsPool:164 - load Dict...
+2018-05-08 12:59:37,952  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 12:59:37,955  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 12:59:37,955  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 12:59:52,686  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 12:59:52,691  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 12:59:52,691  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 12:59:52,691  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 12:59:52,691  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 13:00:00,110  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 13:00:19,118  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:00:20,692  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:00:20,692  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:00:20,693  INFO com.yidian.wordvec2docvec.data.DocsPool:164 - load Dict...
+2018-05-08 13:00:21,117  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:00:21,117  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:00:21,120  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:06:39,181  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:06:40,396  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:06:40,396  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:06:40,396  INFO com.yidian.wordvec2docvec.data.DocsPool:164 - load Dict...
+2018-05-08 13:06:40,703  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:06:40,704  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:06:40,707  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:11:04,630  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:11:05,883  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:11:05,883  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:11:05,884  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 13:11:06,226  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:11:06,226  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:11:06,231  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:14:00,286  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:14:01,844  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:14:01,845  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:14:01,846  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 13:14:02,661  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:14:02,662  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:14:02,680  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:17:34,948  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:17:36,377  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:17:36,377  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:17:36,377  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 13:17:36,741  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:17:36,741  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:17:36,744  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:20:49,477  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:20:50,884  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:20:50,885  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:20:50,885  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 13:20:51,213  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:20:51,213  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:20:51,217  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:23:06,951  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:23:08,709  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:23:08,709  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:23:08,710  INFO com.yidian.wordvec2docvec.data.DocsPool:165 - load Dict...
+2018-05-08 13:23:09,093  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:23:09,093  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:23:09,097  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:25:48,565  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:25:50,031  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:25:50,031  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:25:50,031  INFO com.yidian.wordvec2docvec.data.DocsPool:164 - load Dict...
+2018-05-08 13:25:50,402  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:25:50,402  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:25:50,405  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:27:02,913  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 13:27:02,919  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 13:27:02,919  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 13:27:02,920  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 13:27:02,920  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 13:27:11,322  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 13:28:36,081  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:28:37,233  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:28:37,234  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:28:37,234  INFO com.yidian.wordvec2docvec.data.DocsPool:164 - load Dict...
+2018-05-08 13:28:37,566  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:28:37,566  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:28:37,567  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:28:41,825  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 13:28:41,827  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 13:28:41,828  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 13:28:41,828  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 13:28:41,828  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 13:28:51,150  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 13:30:02,967  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 13:30:04,206  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 13:30:04,207  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 13:30:04,207  INFO com.yidian.wordvec2docvec.data.DocsPool:159 - load Dict...
+2018-05-08 13:30:04,550  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 13:30:04,550  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 13:30:04,550  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 13:30:06,980  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 13:30:06,982  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 13:30:06,982  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 13:30:06,982  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 13:30:06,982  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 13:30:13,805  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 15:06:00,044  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 15:06:01,397  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 15:06:01,397  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 15:06:01,397  INFO com.yidian.wordvec2docvec.data.DocsPool:155 - load Dict...
+2018-05-08 15:06:01,752  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 15:06:01,752  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 15:06:01,756  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 15:06:16,986  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 15:06:17,000  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 15:06:17,000  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 15:06:17,001  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 15:06:17,001  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 15:06:23,880  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 15:07:27,268  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 15:07:50,254  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 15:07:50,254  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 15:07:50,255  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 15:07:50,518  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 15:07:50,518  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 15:07:50,521  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 15:08:14,179  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 15:08:14,182  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 15:08:14,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 15:08:14,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 15:08:14,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 15:08:20,349  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 15:08:53,875  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 15:08:59,286  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 15:08:59,287  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 15:08:59,288  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 15:08:59,528  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 15:08:59,528  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 15:08:59,530  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 15:09:06,242  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 15:09:06,245  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 15:09:06,245  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 15:09:06,246  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 15:09:06,246  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 15:09:14,101  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 15:10:45,996  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 15:11:24,030  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 15:11:24,031  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 15:11:24,032  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 15:11:24,388  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 15:11:24,388  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 15:11:24,390  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 15:11:28,882  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 15:11:28,885  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 15:11:28,885  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 15:11:28,886  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 15:11:28,886  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 15:11:34,653  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 15:25:40,791  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 15:25:47,855  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 15:25:47,856  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 15:25:47,856  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 15:39:16,653  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 15:44:34,801  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 15:44:49,014  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 15:44:49,016  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 15:46:56,394  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 15:47:18,187  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 15:47:18,191  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 15:51:08,590  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 15:53:34,969  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 15:53:34,970  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 15:53:34,970  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 15:53:34,970  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 15:55:07,430  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:00:56,638  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:00:56,641  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:00:56,642  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:00:56,644  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:01:05,468  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:01:05,488  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:01:06,287  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:01:06,288  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:01:06,288  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:01:06,518  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:02:25,216  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:02:26,163  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:02:26,163  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:02:26,163  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:02:26,344  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:02:26,344  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:02:26,347  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:03:26,644  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:03:27,826  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:03:27,827  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:03:27,827  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:03:28,132  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:03:28,132  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:03:28,132  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:03:30,669  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:03:38,036  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:03:39,209  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:03:39,209  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:03:39,209  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:03:39,546  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:03:39,546  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:03:39,546  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:03:41,998  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:04:55,998  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:04:56,001  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:04:56,002  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:04:56,005  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:05:04,578  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:05:04,595  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:05:05,239  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:05:05,240  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:05:05,240  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:05:05,398  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:05:34,981  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:05:34,984  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:05:34,984  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:05:34,988  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:05:42,157  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:05:42,178  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:05:42,791  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:05:42,791  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:05:42,791  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:05:42,954  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:11:12,282  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:11:12,285  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:11:12,285  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:11:12,289  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:11:20,317  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:11:20,340  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:11:20,979  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:11:20,979  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:11:20,980  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:11:21,157  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:13:22,623  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:13:22,626  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:13:22,626  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:13:22,633  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:13:30,154  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:13:30,170  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:13:30,798  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:13:30,798  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:13:30,798  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:13:30,967  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:13:59,636  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:13:59,638  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:13:59,638  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:13:59,642  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:14:06,822  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:14:06,839  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:14:07,468  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:14:07,468  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:14:07,468  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:14:07,652  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:16:10,336  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:16:10,339  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:16:10,339  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:16:10,342  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:16:17,800  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:16:17,815  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:16:18,442  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:16:18,442  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:16:18,442  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:16:18,604  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:19:14,001  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:19:14,004  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:19:14,004  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:19:14,007  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:19:21,159  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:19:21,176  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:19:21,796  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:19:21,796  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:19:21,796  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:19:21,961  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:21:44,411  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:21:44,414  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:21:44,414  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:21:44,417  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:21:51,755  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:21:51,772  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:21:52,404  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:21:52,404  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:21:52,404  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:21:52,580  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:28:17,057  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:28:17,061  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:28:17,061  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:28:17,063  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:28:25,625  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:28:25,648  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:28:26,304  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:28:26,304  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:28:26,304  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:28:26,475  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:29:10,793  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:29:10,797  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:29:10,797  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:29:10,800  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:29:18,490  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:29:18,508  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:29:19,136  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:29:19,136  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:29:19,136  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:29:19,310  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:30:14,132  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:30:14,135  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:30:14,136  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:30:14,139  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:30:21,796  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:30:21,810  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:30:22,414  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:30:22,414  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:30:22,414  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:30:22,588  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:33:41,733  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:33:41,738  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:33:41,739  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:33:41,746  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:33:50,227  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:33:50,246  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:33:50,967  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:33:50,967  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:33:50,967  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:33:51,169  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:35:27,952  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:35:27,955  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:35:27,955  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:35:27,958  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:35:35,563  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:35:35,582  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:35:36,300  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:35:36,300  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:35:36,300  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:35:36,496  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:36:51,936  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:36:52,962  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:36:52,962  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:36:52,963  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:36:53,324  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:36:53,325  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:36:53,325  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:36:55,996  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:36:55,999  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:36:55,999  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:36:55,999  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:36:55,999  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:37:01,834  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:37:47,810  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:37:48,980  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:37:48,981  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:37:48,981  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:37:49,299  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:37:49,299  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:37:49,299  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:37:51,798  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:37:51,799  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:37:51,800  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:37:51,800  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:37:51,800  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:37:58,164  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:39:12,839  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:39:14,235  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:39:14,239  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:39:14,239  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:39:14,651  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:39:14,651  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:39:14,656  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:39:17,544  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:39:22,063  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:39:22,063  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:39:22,063  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:39:22,064  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:39:36,682  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:45:14,810  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:45:14,813  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:45:14,814  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:45:14,817  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:45:22,109  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:45:22,124  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:45:22,748  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:45:22,748  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:45:22,748  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:45:22,915  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:46:36,113  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:46:36,116  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:46:36,117  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:46:36,121  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:46:43,910  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:46:43,929  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:46:44,573  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:46:44,573  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:46:44,573  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:46:44,737  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:47:44,195  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:47:44,198  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:47:44,198  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:47:44,207  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:47:51,401  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:47:51,416  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:47:52,042  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:47:52,042  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:47:52,043  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:47:52,214  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:48:48,352  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:48:48,355  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:48:48,356  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:48:48,359  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:48:55,726  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:48:55,744  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:48:56,366  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:48:56,366  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:48:56,366  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:48:56,539  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:50:51,452  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:50:51,455  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:50:51,455  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:50:51,458  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:50:58,672  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:50:58,687  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:50:59,309  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:50:59,310  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:50:59,310  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:50:59,486  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:51:59,132  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:52:00,286  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:52:00,287  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:52:00,287  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:52:00,606  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:52:00,607  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:52:00,607  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:52:03,123  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:52:03,125  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:52:03,125  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:52:03,126  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:52:03,126  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:52:08,985  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:52:37,876  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:52:39,073  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:52:39,074  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:52:39,074  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:52:39,420  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:52:39,421  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:52:39,424  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:52:41,966  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:52:41,968  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:52:41,969  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:52:41,969  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:52:41,969  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:52:47,799  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:53:37,293  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:53:38,579  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:53:38,579  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:53:38,580  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:53:38,911  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 16:53:38,912  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 16:53:38,915  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 16:53:42,031  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 16:53:42,039  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:53:42,039  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:53:42,040  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:53:42,040  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:53:49,833  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:58:10,852  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 16:58:10,859  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 16:58:10,860  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 16:58:10,869  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 16:58:18,898  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 16:58:18,912  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 16:58:19,525  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 16:58:19,525  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 16:58:19,525  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 16:58:19,711  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 17:01:17,943  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 17:01:17,947  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 17:01:17,948  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 17:01:17,951  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 17:01:25,241  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 17:01:25,258  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 17:01:25,893  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 17:01:25,893  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 17:01:25,893  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 17:01:26,050  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 17:03:38,589  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 17:03:40,045  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 17:03:40,046  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 17:03:40,046  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 17:03:40,342  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 17:03:40,343  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 17:03:40,345  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 17:03:42,708  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 17:03:42,710  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 17:03:42,710  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 17:03:42,710  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 17:03:42,710  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 17:03:48,831  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 17:12:14,900  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 17:12:14,905  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 17:12:14,906  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 17:12:14,912  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 17:12:24,378  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 17:13:08,281  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 17:13:09,121  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 17:13:09,121  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 17:13:09,121  INFO com.yidian.wordvec2docvec.data.DocsPool:154 - load Dict...
+2018-05-08 17:13:09,313  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 17:17:13,129  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 17:17:13,133  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 17:17:13,134  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 17:17:13,137  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 17:17:24,483  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 17:17:34,905  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 17:17:36,029  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 17:17:36,029  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 17:17:36,029  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 17:17:36,366  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 17:20:21,662  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 17:20:21,666  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 17:20:21,666  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 17:20:21,669  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 17:20:32,398  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 17:20:32,464  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 17:20:33,247  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 17:20:33,247  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 17:20:33,248  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 17:20:33,455  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 17:23:35,431  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 17:23:35,434  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 17:23:35,435  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 17:23:35,440  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 17:23:44,526  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 17:23:44,555  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 17:23:45,281  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 17:23:45,281  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 17:23:45,281  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 17:23:45,459  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 20:15:59,765  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:16:00,947  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 20:16:00,947  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:16:00,947  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 20:16:01,252  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 20:16:01,253  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 20:16:01,253  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 20:16:01,253  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 20:16:01,258  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:16:01,258  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:16:01,259  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:16:01,259  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:16:10,782  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 20:19:19,173  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:19:19,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:19:19,193  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:19:19,201  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:19:27,874  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 20:19:27,890  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:19:28,581  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 20:19:28,581  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:19:28,582  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 20:19:28,753  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 20:19:55,138  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:19:56,377  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 20:19:56,378  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:19:56,378  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 20:19:56,709  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 20:19:56,709  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 20:19:56,709  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 20:19:59,361  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 20:19:59,364  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:19:59,364  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:19:59,364  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:19:59,364  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:20:05,882  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 20:27:43,392  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:27:44,806  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 20:27:44,806  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:27:44,810  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 20:27:45,092  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 20:27:45,092  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 20:27:45,092  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 20:27:47,577  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 20:27:47,579  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:27:47,579  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:27:47,579  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:27:47,579  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:27:54,802  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 20:28:59,079  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:29:00,562  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 20:29:00,562  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:29:00,562  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 20:29:00,865  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 20:29:00,865  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 20:29:00,866  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 20:29:03,551  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 20:29:03,553  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:29:03,554  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:29:03,554  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:29:03,554  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:29:09,623  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 20:30:04,265  INFO com.yidian.wordvec2docvec.data.DocsPool:43 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:30:05,512  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - word frequency file loaded.
+2018-05-08 20:30:05,516  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:30:05,516  INFO com.yidian.wordvec2docvec.data.DocsPool:156 - load Dict...
+2018-05-08 20:30:05,837  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - word dict file loaded.
+2018-05-08 20:30:05,838  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - in DocsPool initgetRecommend
+2018-05-08 20:30:05,838  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - load docVec file:../data/docsVec.txt
+2018-05-08 20:30:08,280  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - docVec file loaded.
+2018-05-08 20:30:08,281  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:30:08,281  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:30:08,282  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:30:08,282  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:30:14,366  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 20:39:11,185  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:39:12,406  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - word frequency file loaded.
+2018-05-08 20:39:12,407  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:39:12,407  INFO com.yidian.wordvec2docvec.data.DocsPool:167 - load Dict...
+2018-05-08 20:39:12,653  INFO com.yidian.wordvec2docvec.data.DocsPool:49 - word dict file loaded.
+2018-05-08 20:39:12,654  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - in DocsPool initgetRecommend
+2018-05-08 20:39:12,654  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - load docVec file:../data/docsVec.txt
+2018-05-08 20:39:12,768 ERROR com.yidian.wordvec2docvec.data.DocsPool:57 - java.lang.NumberFormatException: For input string: "=�6"
+2018-05-08 20:39:54,187  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:39:55,097  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - word frequency file loaded.
+2018-05-08 20:39:55,097  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:39:55,097  INFO com.yidian.wordvec2docvec.data.DocsPool:167 - load Dict...
+2018-05-08 20:39:55,277  INFO com.yidian.wordvec2docvec.data.DocsPool:49 - word dict file loaded.
+2018-05-08 20:39:55,277  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - in DocsPool initgetRecommend
+2018-05-08 20:39:55,279  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - load docVec file:../data/docsVec.txt
+2018-05-08 20:47:19,497 ERROR com.yidian.wordvec2docvec.data.DocsPool:57 - java.lang.NumberFormatException: For input string: "=�6"
+2018-05-08 20:48:09,731  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:48:10,852  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - word frequency file loaded.
+2018-05-08 20:48:10,852  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:48:10,853  INFO com.yidian.wordvec2docvec.data.DocsPool:167 - load Dict...
+2018-05-08 20:48:11,230  INFO com.yidian.wordvec2docvec.data.DocsPool:49 - word dict file loaded.
+2018-05-08 20:48:11,231  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - in DocsPool initgetRecommend
+2018-05-08 20:48:11,233  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - load docVec file:../data/docsVec.txt
+2018-05-08 20:48:13,840  INFO com.yidian.wordvec2docvec.data.DocsPool:54 - docVec file loaded.
+2018-05-08 20:48:13,842  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:48:13,842  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:48:13,843  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:48:13,843  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:48:20,527  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 20:53:01,625  INFO com.yidian.wordvec2docvec.data.DocsPool:44 - load word frequency file:../data/word_idf.txt
+2018-05-08 20:53:02,950  INFO com.yidian.wordvec2docvec.data.DocsPool:46 - word frequency file loaded.
+2018-05-08 20:53:02,951  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 20:53:02,951  INFO com.yidian.wordvec2docvec.data.DocsPool:167 - load Dict...
+2018-05-08 20:53:03,284  INFO com.yidian.wordvec2docvec.data.DocsPool:49 - word dict file loaded.
+2018-05-08 20:53:03,284  INFO com.yidian.wordvec2docvec.data.DocsPool:51 - in DocsPool initgetRecommend
+2018-05-08 20:53:03,284  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - load docVec file:../data/docsVec.txt
+2018-05-08 20:53:05,946  INFO com.yidian.wordvec2docvec.data.DocsPool:54 - docVec file loaded.
+2018-05-08 20:53:05,948  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 20:53:05,948  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 20:53:05,948  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 20:53:05,948  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 20:53:13,074  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:10:18,014  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:10:19,359  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:10:19,359  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:10:19,359  INFO com.yidian.wordvec2docvec.data.DocsPool:174 - load Dict...
+2018-05-08 21:10:19,706  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:10:19,706  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:10:19,706  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:10:21,178  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:10:21,179  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:10:21,180  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:10:21,180  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:10:21,180  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:10:30,698  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:11:09,519  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:11:10,710  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:11:10,710  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:11:10,710  INFO com.yidian.wordvec2docvec.data.DocsPool:174 - load Dict...
+2018-05-08 21:11:11,069  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:11:11,069  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:11:11,069  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:11:11,281  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:11:11,294  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:11:11,294  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:11:11,295  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:11:11,296  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:11:21,564  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:12:07,813  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:12:08,822  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:12:08,822  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:12:08,822  INFO com.yidian.wordvec2docvec.data.DocsPool:174 - load Dict...
+2018-05-08 21:12:09,023  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:12:09,023  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:12:09,025  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:14:24,512  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:14:25,717  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:14:25,718  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:14:25,718  INFO com.yidian.wordvec2docvec.data.DocsPool:174 - load Dict...
+2018-05-08 21:14:25,986  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:14:25,986  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:14:25,989  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:16:20,485  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:16:21,739  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:16:21,740  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:16:21,740  INFO com.yidian.wordvec2docvec.data.DocsPool:175 - load Dict...
+2018-05-08 21:16:22,037  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:16:22,037  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:16:22,037  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:16:22,285  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:16:22,306  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:16:22,307  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:16:22,307  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:16:22,307  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:16:31,682  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:18:03,230  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:18:05,150  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:18:05,150  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:18:05,150  INFO com.yidian.wordvec2docvec.data.DocsPool:175 - load Dict...
+2018-05-08 21:18:05,562  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:18:05,562  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:18:05,562  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:18:05,775  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:18:05,823  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:18:05,824  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:18:05,908  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:18:05,908  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:18:16,141  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:19:25,774  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:19:27,489  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:19:27,490  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:19:27,490  INFO com.yidian.wordvec2docvec.data.DocsPool:175 - load Dict...
+2018-05-08 21:19:27,957  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:19:27,957  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:19:27,957  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:19:28,966  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:19:28,969  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:19:28,969  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:19:28,971  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:19:28,971  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:19:38,224  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:20:55,794  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:20:56,999  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:20:57,002  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:20:57,003  INFO com.yidian.wordvec2docvec.data.DocsPool:175 - load Dict...
+2018-05-08 21:20:57,828  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:20:57,828  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:20:57,828  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:20:58,904  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:20:58,907  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:20:58,907  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:20:58,908  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:20:58,908  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:21:06,681  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:48:56,898  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:48:58,171  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:48:58,171  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:48:58,172  INFO com.yidian.wordvec2docvec.data.DocsPool:175 - load Dict...
+2018-05-08 21:48:58,511  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:48:58,511  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:48:58,511  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:48:58,749  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:48:58,752  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:48:58,753  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:48:58,758  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:48:58,758  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:49:09,250  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:51:00,067  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:51:01,959  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:51:01,959  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:51:01,959  INFO com.yidian.wordvec2docvec.data.DocsPool:175 - load Dict...
+2018-05-08 21:51:02,340  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:51:02,340  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:51:02,340  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:51:02,542  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:51:02,546  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:51:02,546  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:51:02,556  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:51:02,557  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:51:12,415  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:52:37,320  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:52:38,960  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:52:38,961  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:52:38,961  INFO com.yidian.wordvec2docvec.data.DocsPool:175 - load Dict...
+2018-05-08 21:52:39,566  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:52:39,566  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:52:39,566  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:52:39,771  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:52:39,780  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:52:39,781  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:52:39,783  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:52:39,784  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:52:49,186  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 21:57:20,958  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 21:57:23,276  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 21:57:23,276  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 21:57:23,279  INFO com.yidian.wordvec2docvec.data.DocsPool:170 - load Dict...
+2018-05-08 21:57:23,652  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 21:57:23,653  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 21:57:23,653  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 21:57:23,868  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 21:57:23,875  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 21:57:23,875  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 21:57:23,876  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 21:57:23,876  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 21:57:33,828  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:31:22,221  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:31:23,640  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:31:23,641  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:31:23,641  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:31:24,057  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:31:24,057  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:31:24,057  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:31:24,287  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:31:24,294  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:31:24,294  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:31:24,295  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:31:24,295  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:31:34,434  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:32:31,545  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:32:32,850  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:32:32,851  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:32:32,851  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:32:33,150  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:32:33,150  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:32:33,150  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:32:33,326  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:32:33,329  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:32:33,330  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:32:33,330  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:32:33,330  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:32:42,950  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:33:14,950  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:33:16,439  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:33:16,440  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:33:16,440  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:33:16,708  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:33:16,708  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:33:16,711  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:33:16,945  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:33:16,947  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:33:16,947  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:33:16,947  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:33:16,948  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:33:26,663  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:36:58,910  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:37:00,629  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:37:00,629  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:37:00,629  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:37:00,951  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:37:00,951  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:37:00,951  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:37:01,172  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:37:01,182  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:37:01,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:37:01,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:37:01,183  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:37:10,062  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:37:41,487  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:37:43,362  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:37:43,362  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:37:43,362  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:37:43,727  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:37:43,727  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:37:43,727  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:37:44,610  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:37:44,613  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:37:44,613  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:37:44,614  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:37:44,614  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:37:52,504  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:38:05,563  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:38:06,564  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:38:06,565  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:38:06,565  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:38:06,806  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:38:06,806  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:38:06,809  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:38:06,955  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:38:06,957  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:38:06,957  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:38:06,958  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:38:06,958  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:38:15,237  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:40:53,697  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:40:55,289  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:40:55,289  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:40:55,289  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:40:55,630  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:40:55,630  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:40:55,631  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:40:56,633  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:40:56,635  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:40:56,635  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:40:56,635  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:40:56,636  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:41:04,503  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:42:23,415  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:42:25,040  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:42:25,041  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:42:25,041  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:42:25,372  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:42:25,372  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:42:25,373  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:42:26,350  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:42:26,352  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:42:26,353  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:42:26,353  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:42:26,354  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:42:35,260  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:42:47,394  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:42:48,620  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:42:48,620  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:42:48,620  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:42:48,922  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:42:48,922  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:42:48,926  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:42:49,111  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:42:49,113  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:42:49,114  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:42:49,114  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:42:49,114  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:42:57,791  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:44:40,852  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:44:42,119  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:44:42,120  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:44:42,120  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:44:42,433  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:44:42,433  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:44:42,434  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:44:42,613  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:44:42,618  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:44:42,618  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:44:42,619  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:44:42,619  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:44:51,985  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:47:23,997  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:47:25,228  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:47:25,228  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:47:25,228  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:47:25,525  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:47:25,525  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:47:25,525  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:47:26,355  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:47:26,356  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:47:26,357  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:47:26,357  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:47:26,357  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:47:35,091  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:49:24,833  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:49:26,351  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:49:26,351  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:49:26,351  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:49:26,622  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:49:26,622  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:49:26,622  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:49:26,815  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:49:26,818  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:49:26,819  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:49:26,820  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:49:26,820  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:49:35,152  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:49:46,777  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:49:48,008  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:49:48,009  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:49:48,009  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:49:48,324  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:49:48,324  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:49:48,325  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:49:48,516  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:49:48,518  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:49:48,518  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:49:48,519  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:49:48,519  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:49:56,931  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:50:28,802  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:50:30,000  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:50:30,001  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:50:30,001  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:50:30,259  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:50:30,260  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:50:30,260  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:50:31,149  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:50:31,151  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:50:31,151  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:50:31,151  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:50:31,151  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:50:39,182  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:50:54,193  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:50:55,657  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:50:55,657  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:50:55,657  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:50:55,962  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:50:55,962  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:50:55,962  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:50:56,957  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:50:56,959  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:50:56,959  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:50:56,960  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:50:56,960  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:51:04,596  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:51:17,955  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:51:19,845  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:51:19,845  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:51:19,846  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:51:20,079  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:51:20,079  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:51:20,079  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:51:21,039  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:51:21,041  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:51:21,042  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:51:21,042  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:51:21,042  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:51:28,592  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:52:10,351  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:52:11,474  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:52:11,474  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:52:11,480  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:52:11,793  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:52:11,793  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:52:11,793  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:52:12,704  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:52:12,706  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:52:12,706  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:52:12,707  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:52:12,707  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:52:20,677  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 22:53:57,790  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 22:53:58,900  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 22:53:58,900  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 22:53:58,900  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 22:53:59,118  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 22:53:59,119  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 22:53:59,121  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 22:53:59,249  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 22:53:59,251  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 22:53:59,251  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 22:53:59,251  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 22:53:59,251  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 22:54:08,222  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 23:01:35,891  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 23:01:37,218  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 23:01:37,218  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 23:01:37,219  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 23:01:37,475  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 23:01:37,476  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 23:01:37,478  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 23:01:37,661  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 23:01:37,664  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 23:01:37,665  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 23:01:37,665  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 23:01:37,665  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 23:01:47,789  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 23:06:00,881  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 23:06:02,647  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 23:06:02,648  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 23:06:02,648  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 23:06:03,225  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 23:06:03,226  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 23:06:03,226  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 23:06:04,560  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 23:06:04,566  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 23:06:04,566  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 23:06:04,566  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 23:06:04,567  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 23:06:18,235  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 23:06:19,433  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 23:06:19,434  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 23:06:19,434  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 23:06:19,653  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 23:06:19,653  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 23:06:19,657  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 23:06:19,822  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 23:06:19,823  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 23:06:19,824  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 23:06:19,824  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 23:06:19,824  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 23:06:33,424  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 23:08:06,162  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 23:08:07,302  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 23:08:07,302  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 23:08:07,303  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 23:08:07,555  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 23:08:07,556  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 23:08:07,560  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 23:08:07,702  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 23:08:07,705  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 23:08:07,705  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 23:08:07,706  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 23:08:07,706  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 23:08:18,999  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 23:09:13,560  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 23:09:15,608  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 23:09:15,608  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 23:09:15,610  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 23:09:15,960  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 23:09:15,960  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 23:09:15,963  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 23:09:16,133  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 23:09:16,136  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 23:09:16,136  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 23:09:16,136  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 23:09:16,137  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 23:09:25,136  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
+2018-05-08 23:11:17,351  INFO com.yidian.wordvec2docvec.data.DocsPool:45 - load word frequency file:../data/word_idf.txt
+2018-05-08 23:11:18,460  INFO com.yidian.wordvec2docvec.data.DocsPool:47 - word frequency file loaded.
+2018-05-08 23:11:18,461  INFO com.yidian.wordvec2docvec.data.DocsPool:48 - load word dict file:../data/lda.dict.filter.v2
+2018-05-08 23:11:18,461  INFO com.yidian.wordvec2docvec.data.DocsPool:166 - load Dict...
+2018-05-08 23:11:18,696  INFO com.yidian.wordvec2docvec.data.DocsPool:50 - word dict file loaded.
+2018-05-08 23:11:18,696  INFO com.yidian.wordvec2docvec.data.DocsPool:52 - in DocsPool initgetRecommend
+2018-05-08 23:11:18,698  INFO com.yidian.wordvec2docvec.data.DocsPool:53 - load docVec file:../data/docsVec.txt
+2018-05-08 23:11:18,832  INFO com.yidian.wordvec2docvec.data.DocsPool:55 - docVec file loaded.
+2018-05-08 23:11:18,835  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:69 - load word vec:../data/word.vec
+2018-05-08 23:11:18,835  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:95 - load vec from ../data/word.vec
+2018-05-08 23:11:18,836  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:100 - num:541889
+2018-05-08 23:11:18,836  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:102 - size:300
+2018-05-08 23:11:30,054  INFO com.yidian.wordvec2docvec.utils.DocEmbedding:71 - word vec loaded.
